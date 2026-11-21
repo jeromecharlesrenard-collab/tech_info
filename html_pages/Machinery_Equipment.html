@@ -15,10 +15,10 @@
 
   <header>
     <h1>Machinery &amp; Equipment</h1>
-    <p>Shop machines by job: machining, cutting, forming, joining, and finishing, with what each one does best.</p>
+    <p>Shop machines by job (machining, cutting, forming, joining, finishing), plus inspection, scanning, and shop equipment.</p>
   </header>
 
-  <p class="intro">The 25 shop machines, grouped by what they do to the part: <strong>remove</strong> material (machining, cutting), <strong>shape</strong> it (forming), <strong>join</strong> it, or <strong>finish</strong> it. Click a card to see more.</p>
+  <p class="intro">The shop machines, grouped by what they do to the part: <strong>remove</strong> material (machining, cutting), <strong>shape</strong> it (forming), <strong>join</strong> it, or <strong>finish</strong> it; then inspection and shop equipment. Click a card to see more. The processes behind them are on <a href="Fabrication.html">Fabrication</a>.</p>
 
   <nav class="section-nav" aria-label="Page sections">
     <a href="#machining">Machining</a>
@@ -26,6 +26,8 @@
     <a href="#forming">Forming</a>
     <a href="#joining">Joining</a>
     <a href="#finishing">Grinding &amp; Finishing</a>
+    <a href="#inspection">Inspection &amp; Scanning</a>
+    <a href="#shop">Shop Equipment</a>
   </nav>
 
   <h2 id="machining">Machining</h2>
@@ -248,8 +250,8 @@
         <tr><th>Cutter</th><th>Materials</th><th>Typical thickness</th><th>Edge</th><th>Heat</th><th>Cost to run</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>Laser</strong></td><td>Metals (fiber); wood, acrylic (CO₂)</td><td>Thin sheet to ~1 in (25 mm) steel</td><td>Finest</td><td>Small heat zone</td><td>Medium</td></tr>
-        <tr><td><strong>Plasma</strong></td><td>Conductive metals only</td><td>Up to ~2 in (50 mm) steel</td><td>Roughest</td><td>Largest heat zone</td><td>Lowest</td></tr>
+        <tr><td><strong>Laser</strong></td><td>Metals (fiber); wood, acrylic (CO₂)</td><td>Thin sheet to ~1 in (25 mm) steel; more on high-power lasers</td><td>Finest</td><td>Small heat zone</td><td>Medium</td></tr>
+        <tr><td><strong>Plasma</strong></td><td>Conductive metals only</td><td>Up to ~2 in (50 mm) steel and more</td><td>Roughest</td><td>Largest heat zone</td><td>Lowest</td></tr>
         <tr><td><strong>Water jet</strong></td><td>Almost anything</td><td>Up to ~6 in (150 mm) and more</td><td>Fine (slight taper)</td><td>None</td><td>Highest</td></tr>
       </tbody>
     </table>
@@ -339,7 +341,7 @@
           <dt>MIG (GMAW)</dt><dd>Wire electrode fed through the gun with shielding gas (often 75% argon / 25% CO₂ for steel); fast, easy to learn, the workhorse of steel fabrication.</dd>
           <dt>TIG (GTAW)</dt><dd>Non-consumable <strong>tungsten</strong> electrode, filler rod added by hand, pure argon; slow but the cleanest, most precise welds; best for thin metal, <strong>aluminum</strong>, and <strong>stainless</strong>.</dd>
           <dt>Spot (resistance)</dt><dd>Two copper electrodes clamp overlapping sheets and pass a high current that melts a small "nugget"; no filler or gas; car bodies and sheet metal.</dd>
-          <dt>Stick (SMAW)</dt><dd>Not on the list, but worth knowing: flux-coated rod, no gas bottle; good outdoors and on dirty or rusty steel.</dd>
+          <dt>Stick (SMAW)</dt><dd>Also common: flux-coated rod, no gas bottle; good outdoors and on dirty or rusty steel.</dd>
         </dl>
       </div>
     </article>
@@ -380,6 +382,7 @@
         <tr><td>Angle grinder</td><td>Hand tool that <strong>cuts, grinds, and cleans</strong> <em>(change the disk)</em></td></tr>
         <tr><td>Belt / disc sander</td><td>Belt = <strong>flat</strong> faces; disc = <strong>edges and angles</strong></td></tr>
         <tr><td>Sand blaster</td><td>Strips <strong>rust and paint</strong>; preps for coating</td></tr>
+        <tr><td>Part washer</td><td><strong>Cleans</strong> oil and chips before the next step</td></tr>
       </tbody>
     </table>
   </div>
@@ -431,7 +434,159 @@
       <div class="more">
         <dl>
           <dt>Media</dt><dd><strong>Aluminum oxide</strong> (aggressive), <strong>glass bead</strong> (satin finish), <strong>walnut shell</strong> or plastic (gentle), <strong>steel grit</strong>.</dd>
-          <dt>See also</dt><dd>Tumbling, for finishing many small parts at once: <a href="Fabrication.html">Fabrication</a>.</dd>
+          <dt>See also</dt><dd>Tumbling, for finishing many small parts at once, and all part finishes: <a href="Fabrication.html#finishing">Fabrication</a>.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Part Washer</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Spray, soak, brush</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Metal parts</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Oil, chips, grime</span></div>
+      </div>
+      <p class="desc">Cleans oil, coolant, chips, and grime off parts before inspection, welding, painting, or assembly.</p>
+      <div class="more">
+        <dl>
+          <dt>Types</dt><dd><strong>Solvent sink</strong> washer (brush and recirculating solvent); <strong>aqueous</strong> spray cabinet (hot water and detergent); <strong>ultrasonic</strong> tank for small, precise parts and blind holes.</dd>
+        </dl>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="inspection">Inspection &amp; Scanning</h2>
+  <div class="recap" hidden>
+    <table class="recap-table">
+      <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+      <tbody>
+        <tr><td>Surface plate</td><td>The <strong>flat zero</strong> for layout and measuring <em>(never a workbench)</em></td></tr>
+        <tr><td>3D scanner</td><td>Part → <strong>point cloud</strong> → <strong>mesh</strong> → <strong>CAD</strong></td></tr>
+        <tr><td>Reverse engineering</td><td>Making a CAD model <strong>from a real part</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rows">
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Layout Table (Surface Plate)</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Flat reference</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Granite or iron</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Layout, inspection</span></div>
+      </div>
+      <p class="desc">A precision-flat granite (or cast-iron) plate used as the zero reference for marking out parts and checking flatness, height, and squareness.</p>
+      <div class="more">
+        <dl>
+          <dt>Used with</dt><dd><strong>Height gauge</strong> and layout fluid (Dykem) for scribing lines; dial and test <strong>indicators</strong>, squares, gauge blocks, V-blocks.</dd>
+          <dt>Grades</dt><dd><strong>AA</strong> (laboratory), <strong>A</strong> (inspection), <strong>B</strong> (toolroom).</dd>
+          <dt>Care</dt><dd>Keep it clean and covered; never hammer, weld, or stack parts on it.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Handheld 3D Laser Scanner</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Laser line scan</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Most parts</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Part to CAD</span></div>
+      </div>
+      <p class="desc">The process is called <strong>3D scanning</strong> or <strong>reverse engineering</strong>: sweeping the scanner over the part builds a <strong>point cloud</strong> that turns into a mesh model.</p>
+      <div class="more">
+        <dl>
+          <dt>Workflow</dt><dd><strong>Scan</strong> (point cloud) → <strong>mesh</strong> (STL) → <strong>CAD model</strong> you can edit, with software like <strong>Geomagic Design X</strong>; also used to inspect a part against its CAD model.</dd>
+          <dt>Examples</dt><dd><strong>Creaform HandySCAN</strong>; <strong>FARO</strong> portable measuring arms with a laser line probe.</dd>
+          <dt>Tips</dt><dd>Shiny, dark, or clear surfaces may need a thin scanning spray; many handheld scanners use small positioning-target stickers on or around the part.</dd>
+        </dl>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="shop">Shop Equipment</h2>
+  <div class="recap" hidden>
+    <table class="recap-table">
+      <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+      <tbody>
+        <tr><td>Storage</td><td><strong>Toolbox</strong> to carry; <strong>tool chest</strong> to organize</td></tr>
+        <tr><td>Work bench</td><td><strong>Steel</strong> top for welding; <strong>vise</strong> bolted on</td></tr>
+        <tr><td>Carts</td><td><strong>Locking casters</strong></td></tr>
+        <tr><td>Crane / hoist</td><td>Never over <strong>rated capacity</strong>; never <strong>under the load</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rows">
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Tools</h3>
+        <div class="fact"><span class="label">Type</span><span class="value">Hand and power</span></div>
+        <div class="fact"><span class="label">Key spec</span><span class="value">SAE and metric</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Everyday work</span></div>
+      </div>
+      <p class="desc">The everyday kit: hand tools, measuring tools, and portable power tools.</p>
+      <div class="more">
+        <dl>
+          <dt>Hand tools</dt><dd>Wrenches, sockets, screwdrivers, pliers, hammers, files, clamps, taps and dies, deburring tools.</dd>
+          <dt>Measuring</dt><dd>Calipers, micrometers, steel rule, squares, protractor, height gauge, dial indicators, thread gauges.</dd>
+          <dt>Power tools</dt><dd>Drill, impact driver, angle grinder, reciprocating saw, die grinder.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Toolbox</h3>
+        <div class="fact"><span class="label">Type</span><span class="value">Portable box</span></div>
+        <div class="fact"><span class="label">Key spec</span><span class="value">Carry handle</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Tools on the go</span></div>
+      </div>
+      <p class="desc">Carries a working set of tools to the machine, the job site, or the car; steel or tough plastic, with a lift-out tray.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Rolling Tool Chest</h3>
+        <div class="fact"><span class="label">Type</span><span class="value">Drawer cabinet</span></div>
+        <div class="fact"><span class="label">Key spec</span><span class="value">Locking drawers</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Organized storage</span></div>
+      </div>
+      <p class="desc">A top chest on a rolling cabinet with ball-bearing drawers; foam drawer inserts (shadow boards) show at a glance when a tool is missing.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Work Bench</h3>
+        <div class="fact"><span class="label">Type</span><span class="value">Heavy-duty table</span></div>
+        <div class="fact"><span class="label">Key spec</span><span class="value">Steel or wood top</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Assembly, vise</span></div>
+      </div>
+      <p class="desc">The main work surface, with a bench vise bolted to one corner: a steel top for welding and hammering, a wood top for assembly and delicate parts.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Tool/Part Cart</h3>
+        <div class="fact"><span class="label">Type</span><span class="value">Rolling cart</span></div>
+        <div class="fact"><span class="label">Key spec</span><span class="value">Locking casters</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Moving parts</span></div>
+      </div>
+      <p class="desc">Brings tools and parts to the machine and moves work between stations; shelves with raised lips keep parts from sliding off.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Overhead Crane/Hoist</h3>
+        <div class="fact"><span class="label">Type</span><span class="value">Lifting device</span></div>
+        <div class="fact"><span class="label">Key spec</span><span class="value">Rated capacity</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Heavy lifts</span></div>
+      </div>
+      <p class="desc">Lifts heavy parts, molds, and stock onto machines: bridge or gantry crane, jib crane, with a manual or electric chain hoist.</p>
+      <div class="more">
+        <dl>
+          <dt>Safety</dt><dd>Never exceed the rated capacity; inspect slings, hooks, and chains before use; never stand or walk under a load.</dd>
         </dl>
       </div>
     </article>
@@ -439,7 +594,7 @@
   </div>
 
   <footer>
-    Source: Machinery &amp; Equipment.pdf (machine list); descriptions from standard shop references. Created 2026-11-21.
+    Source: MACHINERY &amp; EQUIPMENT.docx (machine and equipment list, 3D scanning notes); descriptions from standard shop references. Created 2026-11-21, updated 2026-11-21.
   </footer>
 
 </div>

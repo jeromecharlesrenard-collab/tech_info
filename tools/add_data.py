@@ -361,7 +361,7 @@ def build_prompt(page: Page, material: Material, instructions: str = "", publish
   like the other home page entries (one line, about 80 to 130 characters).
 - Then replace ALL template placeholder content with the material. Organize it in logical boxed sections
   per subject with the expand function: full-width title boxes (class "card row-card title-box", see
-  html_pages/Materials.html and html_pages/Polymer_3D_Print.html for the markup), in a
+  html_pages/Materials.html and html_pages/Fabrication.html for the markup), in a
   logical order (general to specific, or chronological). Clean design, same look as the other pages.
 - Footer: "Source: <source file name, or JCR research>. Created {day}."
 - Images whose names start with "{NEW_IMAGE_PREFIX}_" belong to this page: rename each one to the page prefix

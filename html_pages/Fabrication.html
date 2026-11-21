@@ -15,21 +15,55 @@
 
   <header>
     <h1>Fabrication</h1>
-    <p>Fabrication technologies (subtractive, formative, additive, joining) and part finishes, from anodizing to tumbling.</p>
+    <p>How parts are made: machining, molding and forming, 3D printing, joining, composites, and finishing.</p>
   </header>
 
-  <p class="intro">How parts are made, grouped by how the material is handled: <strong>removed</strong>, <strong>shaped</strong>, <strong>added</strong>, or <strong>joined</strong>. Click a box to open it. For the machines themselves, see <a href="Machinery_Equipment.html">Machinery &amp; Equipment</a>; for plastics and 3D printing details, see <a href="Polymer_3D_Print.html">Polymer &amp; 3D Print</a>.</p>
+  <p class="intro">Every way of making a part, grouped by how the material is handled: <strong>removed</strong>, <strong>shaped</strong>, <strong>added</strong>, <strong>joined</strong>, then <strong>finished</strong>. Click a box to open it. Values marked ~ are approximate. The machines are on <a href="Machinery_Equipment.html">Machinery &amp; Equipment</a>; metals, plastics, and other materials on <a href="Materials.html">Materials</a>.</p>
 
   <nav class="section-nav" aria-label="Page sections">
-    <a href="#technologies">Main Fabrication Technologies</a>
+    <a href="#overview">Overview</a>
+    <a href="#subtractive">Subtractive</a>
+    <a href="#formative">Formative</a>
+    <a href="#additive">Additive (3D Printing)</a>
+    <a href="#joining">Joining</a>
+    <a href="#composites">Composites &amp; Chemical</a>
     <a href="#finishing">Finishing</a>
   </nav>
 
-  <h2 id="technologies">Main Fabrication Technologies</h2>
+  <h2 id="overview">Overview</h2>
   <div class="rows">
 
     <article class="card row-card title-box">
-      <div class="title-line"><h3>Subtractive (Material Removal)</h3><span class="origin"><span class="label">Methods</span><span class="value">Machining · Grinding · EDM · Laser · Waterjet · Plasma</span></span></div>
+      <div class="title-line"><h3>Subtractive vs. Formative vs. Additive</h3><span class="origin"><span class="label">Topics</span><span class="value">Remove · Shape · Add · How many parts</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Subtractive</dt><dd><strong>Removes material from a solid block</strong>: milling, turning, drilling, grinding, EDM, cutting. Tight tolerances and full material strength, but more waste and limits on internal shapes.</dd>
+          <dt>Formative</dt><dd><strong>Shapes material without removing it</strong>: molding, casting, forging, sheet metal forming. Cheapest per part at volume, but molds and dies cost time and money.</dd>
+          <dt>Additive (AM)</dt><dd><strong>Builds the part layer by layer</strong> from a 3D model (3D printing). Little waste, no tooling, complex shapes (lattices, internal channels); slower per part and usually weaker between layers.</dd>
+          <dt>CNC</dt><dd><strong>Computer Numerical Control</strong>: the machine follows a G-code program. CNC mills and lathes (subtractive) and 3D printers (additive) are all numerically controlled.</dd>
+          <dt>How many parts</dt><dd>1 – 10: <strong>3D print</strong> or <strong>CNC</strong>; 10 – 50: <strong>vacuum casting</strong>; thousands: <strong>injection molding</strong>, die casting, or stamping.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Subtractive</td><td><strong>Cuts away</strong> from a block <em>(machining)</em></td></tr>
+            <tr><td>Formative</td><td><strong>Molds, casts, bends</strong></td></tr>
+            <tr><td>Additive</td><td><strong>Adds</strong> layers <em>(3D printing)</em></td></tr>
+            <tr><td>Quantity</td><td>Few = <strong>print or machine</strong>; dozens = <strong>cast</strong>; thousands = <strong>mold</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="subtractive">Subtractive (Material Removal)</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Machining &amp; Cutting Processes</h3><span class="origin"><span class="label">Methods</span><span class="value">Machining · Grinding · EDM · Laser · Waterjet · Plasma</span></span></div>
       <div class="more">
         <dl class="tl-list">
           <dt>Milling</dt><dd>A <strong>rotating multi-point cutter</strong> removes material from a stationary or moving workpiece: flat surfaces, pockets, slots, contours, and complex 3D shapes. Runs on <strong>3-axis through 5-axis</strong> machines.</dd>
@@ -58,7 +92,35 @@
     </article>
 
     <article class="card row-card title-box">
-      <div class="title-line"><h3>Formative (Shaping Without Removal)</h3><span class="origin"><span class="label">Methods</span><span class="value">Molding · Extrusion · Casting · Forging · Sheet metal</span></span></div>
+      <div class="title-line"><h3>Why Machining Is Much Faster Today</h3><span class="origin"><span class="label">Factors</span><span class="value">Tool materials · Spindles · Toolpaths · Machines</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Tool materials</dt><dd><strong>Coated carbide, ceramics, and CBN</strong> (cubic boron nitride) cut steel <strong>several times faster</strong> than older high-speed steel (HSS) tools. In aluminum, cutting speeds can now pass <strong>1,000 m/min</strong> (~3,300 ft/min).</dd>
+          <dt>Spindles</dt><dd>High-speed machining centers run at <strong>20,000 to 40,000 rpm</strong> or more (standard ones ~8,000 – 15,000); older machines topped out around <strong>6,000 to 10,000 rpm</strong>.</dd>
+          <dt>Toolpaths</dt><dd><strong>Adaptive</strong> (high-efficiency) and <strong>trochoidal</strong> strategies keep the load on the tool steady, using the full flute length at a light side step, so the tool runs much faster without breaking.</dd>
+          <dt>Machine and control</dt><dd><strong>Stiffer frames, faster drives</strong>, and controls that <strong>read the toolpath ahead</strong> (look-ahead) let the machine actually reach those speeds and hold accuracy.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Tools</td><td><strong>Carbide</strong> cuts steel several times faster than HSS</td></tr>
+            <tr><td>Spindles</td><td><strong>20,000+ rpm</strong> vs. ~8,000 before</td></tr>
+            <tr><td>Toolpaths</td><td><strong>Adaptive</strong>: steady load, faster feeds</td></tr>
+            <tr><td>Machines</td><td><strong>Stiffer</strong> frames, <strong>look-ahead</strong> controls</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="formative">Formative (Shaping Without Removal)</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Molding, Casting &amp; Metal Forming</h3><span class="origin"><span class="label">Methods</span><span class="value">Molding · Extrusion · Casting · Forging · Sheet metal</span></span></div>
       <div class="more">
         <dl class="tl-list">
           <dt>Injection molding</dt><dd>Molten thermoplastic is injected under pressure into a closed <strong>steel or aluminum mold</strong>. High tooling cost, but <strong>very low unit cost</strong> at high volume, with excellent repeatability.</dd>
@@ -100,24 +162,65 @@
     </article>
 
     <article class="card row-card title-box">
-      <div class="title-line"><h3>Additive (Layer by Layer)</h3><span class="origin"><span class="label">Methods</span><span class="value">FDM · SLA / DLP · SLS / MJF · DMLS / SLM · Binder jetting · DED</span></span></div>
+      <div class="title-line"><h3>Vacuum Casting</h3><span class="origin"><span class="label">Topics</span><span class="value">Master · Silicone mold · PU resin · Short runs</span></span></div>
       <div class="more">
         <dl class="tl-list">
-          <dt>FDM / FFF</dt><dd>Extruded thermoplastic <strong>filament</strong>, layer by layer: <strong>low cost</strong>, prototypes and fixtures.</dd>
-          <dt>SLA / DLP</dt><dd>UV light cures liquid photopolymer <strong>resin</strong>: <strong>high resolution</strong>, smooth surfaces.</dd>
-          <dt>SLS / MJF</dt><dd>A laser (SLS) or fusing agent plus heat (MJF) fuses <strong>nylon powder</strong>: strong functional parts, <strong>no supports</strong> needed.</dd>
-          <dt>DMLS / SLM</dt><dd><strong>Metal 3D printing</strong>: a laser fuses metal powder into dense, complex metal parts for aerospace, medical, and tooling.</dd>
-          <dt>Binder jetting</dt><dd>A <strong>binder</strong> bonds powder layers, then the part is sintered: faster and cheaper for <strong>metal or sand</strong> at volume.</dd>
-          <dt>DED</dt><dd><strong>Directed Energy Deposition</strong>: material is melted as it is deposited; large parts and <strong>repair</strong>.</dd>
-          <dt>More</dt><dd>Process comparison and materials: <a href="Polymer_3D_Print.html">Polymer &amp; 3D Print</a>.</dd>
+          <dt>How it works</dt><dd>A <strong>master part</strong> (often an SLA print) is cast into a <strong>silicone mold</strong>; liquid <strong>polyurethane (PU)</strong> resin is then poured into the mold under vacuum, so there are no air bubbles.</dd>
+          <dt>Run size</dt><dd>About <strong>15 – 25 parts per mold</strong>; ideal for 10 – 50 parts.</dd>
+          <dt>Strengths</dt><dd>Production-like finish and colors; resins that mimic ABS, PP, PC, or rubber (wide Shore hardness range); no costly steel mold.</dd>
+          <dt>Limits</dt><dd>Molds wear out; slower per part than injection molding; parts are PU, not the real thermoplastic.</dd>
         </dl>
       </div>
       <div class="recap" hidden>
         <table class="recap-table">
           <thead><tr><th>Item</th><th>Remember</th></tr></thead>
           <tbody>
-            <tr><td>FDM</td><td><strong>Filament</strong>: cheapest</td></tr>
-            <tr><td>SLA</td><td><strong>Resin</strong>: finest detail</td></tr>
+            <tr><td>Mold</td><td><strong>Silicone</strong>, made from a printed master</td></tr>
+            <tr><td>Material</td><td><strong>PU resin</strong> poured under <strong>vacuum</strong> <em>(no bubbles)</em></td></tr>
+            <tr><td>Run</td><td><strong>~20 parts</strong> per mold</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="additive">Additive (3D Printing)</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>3D Printing Processes</h3><span class="origin"><span class="label">Processes</span><span class="value">FDM · SLA / DLP · SLS / MJF · DMLS / SLM · Binder jet · DED</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>FDM / FFF</dt><dd><strong>Fused Deposition Modeling</strong> (Fused Filament Fabrication): a nozzle melts plastic <strong>filament</strong> and lays it down line by line. Cheapest and most common (desktop printers); PLA, PETG, ABS, ASA, TPU, nylon, PC. Visible layer lines; weakest across layers (Z direction).</dd>
+          <dt>SLA / DLP</dt><dd><strong>Stereolithography</strong>: a UV laser (or a projector or screen in DLP and MSLA printers) cures liquid <strong>photopolymer resin</strong>. Finest detail and smoothest surface (miniatures, dental, jewelry molds); parts need washing (IPA) and UV post-curing; standard resins are brittle.</dd>
+          <dt>SLS</dt><dd><strong>Selective Laser Sintering</strong>: a laser fuses <strong>nylon powder</strong> (PA12, PA11). The loose powder supports the part, so <strong>no support structures</strong>; strong functional parts with a slightly grainy surface.</dd>
+          <dt>MJF</dt><dd><strong>Multi Jet Fusion</strong> (HP): inkjet heads print a fusing agent on nylon powder, then infrared heat fuses each layer. Like SLS but faster, with more even strength; parts come out gray, usually dyed black.</dd>
+          <dt>DMLS / SLM</dt><dd><strong>Metal 3D printing</strong> (Direct Metal Laser Sintering / Selective Laser Melting): a laser fuses metal powder into dense, complex metal parts for aerospace, medical, and tooling.</dd>
+          <dt>Binder jetting</dt><dd>A <strong>binder</strong> bonds powder layers, then the part is sintered: faster and cheaper for <strong>metal or sand</strong> (casting molds) at volume.</dd>
+          <dt>DED</dt><dd><strong>Directed Energy Deposition</strong>: wire or powder is melted as it is deposited; large parts and <strong>repair</strong>.</dd>
+        </dl>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Process</th><th>Material</th><th>Detail</th><th>Strength</th><th>Cost</th><th>Best for</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>FDM</strong></td><td>Plastic filament</td><td>Medium</td><td>Medium (weak in Z)</td><td>Lowest</td><td>Prototypes, jigs, home printing</td></tr>
+              <tr><td><strong>SLA</strong></td><td>Liquid resin</td><td>Finest</td><td>Low to medium</td><td>Low to medium</td><td>Detailed, smooth parts</td></tr>
+              <tr><td><strong>SLS</strong></td><td>Nylon powder</td><td>Good</td><td>High</td><td>Medium to high</td><td>Functional parts, no supports</td></tr>
+              <tr><td><strong>MJF</strong></td><td>Nylon powder</td><td>Good</td><td>High, even</td><td>Medium to high</td><td>Short production runs</td></tr>
+              <tr><td><strong>DMLS / SLM</strong></td><td>Metal powder</td><td>Good</td><td>Very high</td><td>Highest</td><td>Complex metal parts</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>FDM</td><td>Melted <strong>filament</strong>: cheapest, the home printer</td></tr>
+            <tr><td>SLA</td><td>UV-cured <strong>resin</strong>: finest detail</td></tr>
             <tr><td>SLS / MJF</td><td><strong>Nylon powder</strong>: strong, no supports</td></tr>
             <tr><td>DMLS / SLM</td><td><strong>Metal powder</strong> + laser</td></tr>
             <tr><td>DED</td><td>Melt as you deposit: <strong>big parts, repair</strong></td></tr>
@@ -126,15 +229,20 @@
       </div>
     </article>
 
+  </div>
+
+  <h2 id="joining">Joining &amp; Assembly</h2>
+  <div class="rows">
+
     <article class="card row-card title-box">
-      <div class="title-line"><h3>Joining &amp; Assembly</h3><span class="origin"><span class="label">Methods</span><span class="value">Welding · Brazing / soldering · Ultrasonic · Adhesives · Fasteners</span></span></div>
+      <div class="title-line"><h3>Joining Methods</h3><span class="origin"><span class="label">Methods</span><span class="value">Welding · Brazing / soldering · Ultrasonic · Adhesives · Fasteners</span></span></div>
       <div class="more">
         <dl class="tl-list">
           <dt>Welding</dt><dd>Metals are <strong>fused with heat</strong>: MIG, TIG, stick, spot/resistance, laser, or <strong>friction stir</strong> welding (a spinning tool stirs the metals together without melting them).</dd>
           <dt>Brazing / soldering</dt><dd>Parts are joined with a <strong>lower-melting filler metal</strong>, without melting the base metal (brazing above ~450 °C / 840 °F, soldering below).</dd>
           <dt>Ultrasonic welding</dt><dd><strong>High-frequency vibration</strong> bonds plastics or thin metals; common for plastic housings.</dd>
-          <dt>Adhesives &amp; fasteners</dt><dd>Structural <strong>adhesives</strong>, <strong>rivets</strong>, <strong>screws</strong>, <strong>snap fits</strong>, and <strong>press fits</strong>.</dd>
-          <dt>More</dt><dd>Welders and riveters: <a href="Machinery_Equipment.html#joining">Machinery &amp; Equipment</a>.</dd>
+          <dt>Adhesives &amp; fasteners</dt><dd>Structural <strong>adhesives</strong>, <strong>rivets</strong>, <strong>screws</strong>, <strong>snap fits</strong>, and <strong>press fits</strong>. Which glue to use: <a href="Materials.html#adhesives">Materials</a>.</dd>
+          <dt>Machines</dt><dd>Welders and riveters: <a href="Machinery_Equipment.html#joining">Machinery &amp; Equipment</a>.</dd>
         </dl>
       </div>
       <div class="recap" hidden>
@@ -150,13 +258,26 @@
       </div>
     </article>
 
+  </div>
+
+  <h2 id="composites">Composites &amp; Chemical Processes</h2>
+  <div class="rows">
+
     <article class="card row-card title-box">
-      <div class="title-line"><h3>Composites &amp; Other</h3><span class="origin"><span class="label">Methods</span><span class="value">Composite layup · Chemical etching · Surface finishing</span></span></div>
+      <div class="title-line"><h3>Composite Layup &amp; Chemical Etching</h3><span class="origin"><span class="label">Methods</span><span class="value">Hand layup · Prepreg · RTM · Winding · Pultrusion · Etching</span></span></div>
       <div class="more">
         <dl class="tl-list">
-          <dt>Composite layup</dt><dd><strong>Carbon or glass fiber</strong> plus resin: hand layup, <strong>prepreg</strong> cured in an autoclave, <strong>RTM</strong> (Resin Transfer Molding), filament winding, or pultrusion. High <strong>strength-to-weight</strong> parts.</dd>
-          <dt>Chemical etching</dt><dd>Also <strong>photochemical machining</strong>: selective chemical removal makes thin, precise metal parts and <strong>PCBs</strong>.</dd>
-          <dt>Surface finishing</dt><dd><strong>Anodizing, plating, powder coating, painting, heat treatment, passivation</strong>: adds corrosion resistance, hardness, or a better look. Details: see <a href="#finishing">Part Finishes</a> below.</dd>
+          <dt>Composite layup</dt><dd><strong>Carbon or glass fiber</strong> plus resin, combined by:
+            <ul class="steps">
+              <li><strong>Hand layup:</strong> fabric wetted with resin in an open mold</li>
+              <li><strong>Prepreg:</strong> fabric pre-impregnated with resin, cured under heat and pressure in an <strong>autoclave</strong></li>
+              <li><strong>RTM</strong> (Resin Transfer Molding): resin injected into dry fiber in a closed mold</li>
+              <li><strong>Filament winding:</strong> fiber wound on a mandrel (pipes, tanks)</li>
+              <li><strong>Pultrusion:</strong> fiber pulled through a resin bath and heated die (constant profiles)</li>
+            </ul>
+            Result: high <strong>strength-to-weight</strong> parts. The materials: <a href="Materials.html#composites">Materials</a>.
+          </dd>
+          <dt>Chemical etching</dt><dd>Also <strong>photochemical machining</strong>: selective chemical removal makes thin, precise metal parts and <strong>PCBs</strong>, with no burrs or stress.</dd>
         </dl>
       </div>
       <div class="recap" hidden>
@@ -164,8 +285,8 @@
           <thead><tr><th>Item</th><th>Remember</th></tr></thead>
           <tbody>
             <tr><td>Composites</td><td><strong>Fiber + resin</strong>: light and strong</td></tr>
+            <tr><td>Prepreg</td><td>Pre-wetted fabric, <strong>autoclave</strong> cured</td></tr>
             <tr><td>Etching</td><td><strong>Chemicals</strong> cut thin parts and PCBs</td></tr>
-            <tr><td>Finishing</td><td>Anodize, plate, <strong>powder coat</strong>, heat treat</td></tr>
           </tbody>
         </table>
       </div>
@@ -177,7 +298,7 @@
   <div class="rows">
 
     <article class="card row-card title-box">
-      <div class="title-line"><h3>Part Finishes</h3><span class="origin"><span class="label">Finishes</span><span class="value">Polishing · Anodizing · Plating · Coatings · Steel</span></span></div>
+      <div class="title-line"><h3>Part Finishes</h3><span class="origin"><span class="label">Finishes</span><span class="value">Polishing · Anodizing · Plating · Coatings · Steel · Heat</span></span></div>
       <div class="more">
         <dl class="tl-list">
           <dt>Mechanical</dt>
@@ -186,12 +307,14 @@
               <li><strong>Tumbling</strong> (drum barrel or vibratory): many small parts at once; see the next box</li>
               <li><strong>Deburring:</strong> removes the sharp edges and burrs left by machining, cutting, and punching, by hand tool, file, abrasive, or tumbling</li>
               <li><strong>Polishing:</strong> finer and finer abrasives, then buffing compounds, to a smooth, mirror-like surface</li>
+              <li><strong>Blasting:</strong> abrasive media for a clean, even matte texture (see the sand blaster on <a href="Machinery_Equipment.html#finishing">Machinery &amp; Equipment</a>)</li>
             </ul>
           </dd>
           <dt>Anodizing</dt><dd><strong>Aluminum</strong> (also titanium): an electrochemical bath grows a hard <strong>oxide layer</strong> that is part of the metal, so it cannot peel. <strong>Type II</strong>: decorative, dyed colors; <strong>Type III</strong> (hard coat): wear resistant.</dd>
           <dt>Plating</dt><dd>Electroplates a thin metal layer: <strong>zinc</strong> (cheap rust protection for steel), <strong>nickel</strong> (wear and corrosion; electroless nickel coats evenly), <strong>chrome</strong> (bright decorative, or hard chrome for wear).</dd>
           <dt>Cerakote</dt><dd>Thin-film <strong>ceramic-polymer coating</strong>, sprayed and oven cured: tough, thin (~0.001 in), many colors; firearms, knives, high-temperature exhaust parts.</dd>
           <dt>Powder coating</dt><dd>Dry powder sprayed electrostatically, then <strong>baked</strong> (~180 – 200 °C / 350 – 400 °F): thick, tough, many colors, no solvents; steel and aluminum.</dd>
+          <dt>Painting</dt><dd>Primer, then paint (liquid, spray); cheapest color and rust protection, less durable than powder coat.</dd>
           <dt>Steel finishes</dt>
           <dd>
             <ul class="steps">
@@ -200,6 +323,7 @@
               <li><strong>Electropolishing</strong>: the reverse of plating; removes a thin surface layer for a bright, smooth, very clean, more corrosion-resistant stainless finish (food, medical)</li>
             </ul>
           </dd>
+          <dt>Heat treatment</dt><dd>Changes the metal inside, not just the surface: <strong>hardening</strong> (heat and quench), <strong>tempering</strong> (less brittle), <strong>annealing</strong> (softer, easier to work), <strong>case hardening</strong> (hard skin, tough core).</dd>
         </dl>
       </div>
       <div class="recap" hidden>
@@ -209,9 +333,9 @@
             <tr><td>Anodizing</td><td><strong>Aluminum</strong> only; grows from the metal <em>(never peels)</em></td></tr>
             <tr><td>Plating</td><td><strong>Zinc</strong> rust-proofs, <strong>nickel</strong> wears, <strong>chrome</strong> shines</td></tr>
             <tr><td>Powder coat</td><td>Sprayed <strong>powder</strong>, then <strong>baked</strong></td></tr>
-            <tr><td>Cerakote</td><td>Thin <strong>ceramic</strong> paint <em>(guns, knives)</em></td></tr>
+            <tr><td>Cerakote</td><td>Thin <strong>ceramic</strong> coating <em>(guns, knives)</em></td></tr>
             <tr><td>Passivation</td><td>Cleans <strong>stainless</strong> so it keeps resisting rust</td></tr>
-            <tr><td>Black oxide</td><td>Black steel, <strong>no size change</strong></td></tr>
+            <tr><td>Heat treatment</td><td><strong>Harden</strong>, then <strong>temper</strong>; anneal to soften</td></tr>
           </tbody>
         </table>
       </div>
@@ -236,7 +360,7 @@
             </ul>
           </dd>
           <dt>Choosing size</dt><dd>Media must be <strong>clearly larger or smaller</strong> than any hole or slot, so it never gets stuck (lodging). Smaller media = finer finish and better reach; larger = faster cutting.</dd>
-          <dt>Loading</dt><dd>About <strong>3 parts media to 1 part parts</strong> by volume, so parts do not hit each other; keep the compound and water topped up to keep the media cutting.</dd>
+          <dt>Loading</dt><dd>Roughly <strong>2 – 3 parts media to 1 part parts</strong> by volume (more media for delicate parts), so parts do not hit each other; keep the compound and water topped up to keep the media cutting.</dd>
         </dl>
       </div>
       <div class="recap" hidden>
@@ -248,7 +372,7 @@
             <tr><td>Plastic</td><td><strong>Gentle</strong>, slower: soft metals</td></tr>
             <tr><td>Shapes</td><td><strong>Cones</strong> for recesses; <strong>tetrahedrons</strong> for corners</td></tr>
             <tr><td>Size</td><td>Never <strong>close to hole size</strong> <em>(it gets stuck)</em></td></tr>
-            <tr><td>Load</td><td><strong>3 : 1</strong> media to parts</td></tr>
+            <tr><td>Load</td><td>About <strong>3 : 1</strong> media to parts</td></tr>
           </tbody>
         </table>
       </div>
@@ -257,7 +381,7 @@
   </div>
 
   <footer>
-    Source: Fabrication_Technologies.pdf, POLYMER &amp; 3D PRINT.docx (part finishes), and earlier tumbling notes; details from standard references. Created 2026-11-21, updated 2026-11-21.
+    Source: Fabrication_Technologies.pdf, MACHINERY &amp; EQUIPMENT.docx (machining speed notes), POLYMER &amp; 3D PRINT.docx (processes, part finishes), and earlier tumbling notes; details from standard references. Created 2026-11-21, updated 2026-11-21.
   </footer>
 
 </div>
