@@ -15,11 +15,165 @@
 
   <header>
     <h1>Fabrication</h1>
-    <p>Shop fabrication and finishing processes: tumbling (barrel and vibratory), media types, and media shapes.</p>
+    <p>Main fabrication technologies (subtractive, formative, additive, joining, composites) and finishing by tumbling.</p>
   </header>
 
-  <p class="intro">Fabrication processes and how to get them right. Click a box to open it. For the machines themselves, see <a href="Machinery_Equipment.html">Machinery &amp; Equipment</a>.</p>
+  <p class="intro">How parts are made, grouped by how the material is handled: <strong>removed</strong>, <strong>shaped</strong>, <strong>added</strong>, or <strong>joined</strong>. Click a box to open it. For the machines themselves, see <a href="Machinery_Equipment.html">Machinery &amp; Equipment</a>; for plastics and 3D printing details, see <a href="Polymer_3D_Print.html">Polymer &amp; 3D Print</a>.</p>
 
+  <nav class="section-nav" aria-label="Page sections">
+    <a href="#technologies">Main Fabrication Technologies</a>
+    <a href="#finishing">Finishing</a>
+  </nav>
+
+  <h2 id="technologies">Main Fabrication Technologies</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Subtractive (Material Removal)</h3><span class="origin"><span class="label">Methods</span><span class="value">Machining · Grinding · EDM · Laser · Waterjet · Plasma</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Milling</dt><dd>A <strong>rotating multi-point cutter</strong> removes material from a stationary or moving workpiece: flat surfaces, pockets, slots, contours, and complex 3D shapes. Runs on <strong>3-axis through 5-axis</strong> machines.</dd>
+          <dt>Turning (lathing)</dt><dd>The <strong>workpiece rotates</strong> while a stationary single-point tool removes material: shafts, bushings, threads, and tapers. <strong>Swiss-type</strong> lathes handle small, high-precision parts.</dd>
+          <dt>CNC machining</dt><dd><strong>Computer-controlled</strong> milling, turning, routing, drilling, and grinding, driven by <strong>G-code</strong> from CAM software; repeatable, tight-tolerance parts from prototypes to mid volumes.</dd>
+          <dt>Drilling / boring / reaming</dt><dd><strong>Making</strong> holes, <strong>enlarging</strong> them, and <strong>finishing</strong> them to a precise diameter and surface finish.</dd>
+          <dt>Grinding</dt><dd>An <strong>abrasive wheel</strong> removes small amounts of material for very tight tolerances and fine finishes. Types: <strong>surface, cylindrical, centerless, jig</strong>.</dd>
+          <dt>EDM</dt><dd><strong>Electrical Discharge Machining</strong>: controlled sparks erode conductive material. <strong>Wire EDM</strong> cuts profiles; <strong>sinker EDM</strong> forms cavities. Suited to hardened steels and mold tooling.</dd>
+          <dt>Laser cutting</dt><dd>A focused laser beam melts or vaporizes sheet or plate: <strong>fast, precise, narrow kerf</strong>; metals, plastics, and wood.</dd>
+          <dt>Waterjet cutting</dt><dd>A high-pressure water stream, often with abrasive, cuts <strong>almost any material</strong> with <strong>no heat-affected zone</strong>.</dd>
+          <dt>Plasma cutting</dt><dd>An ionized gas arc cuts <strong>conductive metals</strong>; faster and cheaper than laser on <strong>thick plate</strong>, but less precise.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Milling</td><td>The <strong>tool</strong> spins <em>(flat faces, pockets)</em></td></tr>
+            <tr><td>Turning</td><td>The <strong>part</strong> spins <em>(round parts)</em></td></tr>
+            <tr><td>Grinding</td><td><strong>Tightest</strong> tolerances, finest finish</td></tr>
+            <tr><td>EDM</td><td><strong>Sparks</strong>: hardened steel, molds</td></tr>
+            <tr><td>Cutting</td><td>Laser = <strong>precise</strong>; plasma = <strong>thick and cheap</strong>; waterjet = <strong>no heat</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Formative (Shaping Without Removal)</h3><span class="origin"><span class="label">Methods</span><span class="value">Molding · Extrusion · Casting · Forging · Sheet metal</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Injection molding</dt><dd>Molten thermoplastic is injected under pressure into a closed <strong>steel or aluminum mold</strong>. High tooling cost, but <strong>very low unit cost</strong> at high volume, with excellent repeatability.</dd>
+          <dt>Extrusion</dt><dd>Material is pushed through a <strong>die</strong> to make continuous constant-section profiles: tubes, rods, channels, frames. Aluminum, plastics, rubber.</dd>
+          <dt>Blow molding</dt><dd>An air-inflated <strong>parison</strong> (hollow tube of hot plastic) is shaped against a mold: <strong>hollow parts</strong> like bottles and tanks. Variants: extrusion, injection, and stretch blow molding.</dd>
+          <dt>Rotational molding</dt><dd>Plastic powder in a <strong>rotating heated mold</strong> coats the walls: large, seamless hollow parts with low tooling cost.</dd>
+          <dt>Thermoforming / vacuum forming</dt><dd>Heated plastic <strong>sheet</strong> is drawn over a mold by vacuum or pressure: trays, enclosures, packaging.</dd>
+          <dt>Compression / transfer molding</dt><dd>Material is pressed into a heated mold cavity; common for <strong>thermosets, rubber, and composites</strong>.</dd>
+          <dt>Casting</dt><dd>Molten metal is poured or injected into a mold.
+            <ul class="steps">
+              <li><strong>Sand casting:</strong> cheap molds, large parts</li>
+              <li><strong>Die casting:</strong> high volume, aluminum and zinc</li>
+              <li><strong>Investment casting</strong> (lost wax): fine detail</li>
+              <li><strong>Permanent mold casting:</strong> reusable metal molds</li>
+            </ul>
+          </dd>
+          <dt>Forging</dt><dd>Metal is shaped by <strong>compressive force</strong>, hot or cold, which aligns the grain for <strong>superior strength</strong>. Open-die, closed-die, and roll forging.</dd>
+          <dt>Stamping / press forming</dt><dd>Sheet metal is cut and formed in dies (blanking, punching, bending, drawing, coining); <strong>progressive dies</strong> allow very high volume.</dd>
+          <dt>Deep drawing</dt><dd>Sheet is pulled into a die cavity: <strong>seamless cups, cans, housings</strong>.</dd>
+          <dt>Sheet metal bending</dt><dd><strong>Press brakes</strong> bend sheet along straight lines: brackets, chassis, enclosures.</dd>
+          <dt>Roll forming</dt><dd>Strip passes through successive <strong>roller stations</strong>: long, uniform profiles.</dd>
+          <dt>Metal spinning</dt><dd>A rotating disc is formed over a <strong>mandrel</strong>: axisymmetric parts like cones and domes.</dd>
+          <dt>Powder metallurgy / MIM</dt><dd>Metal powder is pressed, or injection molded with a binder (<strong>MIM</strong>, Metal Injection Molding), then <strong>sintered</strong>: near-net-shape small, complex metal parts.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Injection molding</td><td>Costly mold, <strong>pennies per part</strong> at volume</td></tr>
+            <tr><td>Hollow plastic</td><td><strong>Blow</strong> molding (bottles); <strong>roto</strong> molding (big tanks)</td></tr>
+            <tr><td>Extrusion</td><td>Push through a die: <strong>same profile</strong> all along</td></tr>
+            <tr><td>Casting</td><td><strong>Pour</strong> metal: sand, die, investment (lost wax)</td></tr>
+            <tr><td>Forging</td><td><strong>Squeeze</strong> metal: strongest parts</td></tr>
+            <tr><td>Sheet metal</td><td><strong>Stamp</strong>, <strong>draw</strong>, <strong>bend</strong>, <strong>roll</strong>, <strong>spin</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Additive (Layer by Layer)</h3><span class="origin"><span class="label">Methods</span><span class="value">FDM · SLA / DLP · SLS / MJF · DMLS / SLM · Binder jetting · DED</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>FDM / FFF</dt><dd>Extruded thermoplastic <strong>filament</strong>, layer by layer: <strong>low cost</strong>, prototypes and fixtures.</dd>
+          <dt>SLA / DLP</dt><dd>UV light cures liquid photopolymer <strong>resin</strong>: <strong>high resolution</strong>, smooth surfaces.</dd>
+          <dt>SLS / MJF</dt><dd>A laser (SLS) or fusing agent plus heat (MJF) fuses <strong>nylon powder</strong>: strong functional parts, <strong>no supports</strong> needed.</dd>
+          <dt>DMLS / SLM</dt><dd><strong>Metal 3D printing</strong>: a laser fuses metal powder into dense, complex metal parts for aerospace, medical, and tooling.</dd>
+          <dt>Binder jetting</dt><dd>A <strong>binder</strong> bonds powder layers, then the part is sintered: faster and cheaper for <strong>metal or sand</strong> at volume.</dd>
+          <dt>DED</dt><dd><strong>Directed Energy Deposition</strong>: material is melted as it is deposited; large parts and <strong>repair</strong>.</dd>
+          <dt>More</dt><dd>Process comparison and materials: <a href="Polymer_3D_Print.html">Polymer &amp; 3D Print</a>.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>FDM</td><td><strong>Filament</strong>: cheapest</td></tr>
+            <tr><td>SLA</td><td><strong>Resin</strong>: finest detail</td></tr>
+            <tr><td>SLS / MJF</td><td><strong>Nylon powder</strong>: strong, no supports</td></tr>
+            <tr><td>DMLS / SLM</td><td><strong>Metal powder</strong> + laser</td></tr>
+            <tr><td>DED</td><td>Melt as you deposit: <strong>big parts, repair</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Joining &amp; Assembly</h3><span class="origin"><span class="label">Methods</span><span class="value">Welding · Brazing / soldering · Ultrasonic · Adhesives · Fasteners</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Welding</dt><dd>Metals are <strong>fused with heat</strong>: MIG, TIG, stick, spot/resistance, laser, or <strong>friction stir</strong> welding (a spinning tool stirs the metals together without melting them).</dd>
+          <dt>Brazing / soldering</dt><dd>Parts are joined with a <strong>lower-melting filler metal</strong>, without melting the base metal (brazing above ~450 °C / 840 °F, soldering below).</dd>
+          <dt>Ultrasonic welding</dt><dd><strong>High-frequency vibration</strong> bonds plastics or thin metals; common for plastic housings.</dd>
+          <dt>Adhesives &amp; fasteners</dt><dd>Structural <strong>adhesives</strong>, <strong>rivets</strong>, <strong>screws</strong>, <strong>snap fits</strong>, and <strong>press fits</strong>.</dd>
+          <dt>More</dt><dd>Welders and riveters: <a href="Machinery_Equipment.html#joining">Machinery &amp; Equipment</a>.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Welding</td><td><strong>Melts</strong> the base metal</td></tr>
+            <tr><td>Brazing / soldering</td><td>Only the <strong>filler</strong> melts</td></tr>
+            <tr><td>Ultrasonic</td><td><strong>Vibration</strong> welds plastic</td></tr>
+            <tr><td>Mechanical</td><td>Rivets, screws, <strong>snap fits</strong>, press fits</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Composites &amp; Other</h3><span class="origin"><span class="label">Methods</span><span class="value">Composite layup · Chemical etching · Surface finishing</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Composite layup</dt><dd><strong>Carbon or glass fiber</strong> plus resin: hand layup, <strong>prepreg</strong> cured in an autoclave, <strong>RTM</strong> (Resin Transfer Molding), filament winding, or pultrusion. High <strong>strength-to-weight</strong> parts.</dd>
+          <dt>Chemical etching</dt><dd>Also <strong>photochemical machining</strong>: selective chemical removal makes thin, precise metal parts and <strong>PCBs</strong>.</dd>
+          <dt>Surface finishing</dt><dd><strong>Anodizing, plating, powder coating, painting, heat treatment, passivation</strong>: adds corrosion resistance, hardness, or a better look. Mechanical finishing: see <a href="#finishing">Tumbling</a> below.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Composites</td><td><strong>Fiber + resin</strong>: light and strong</td></tr>
+            <tr><td>Etching</td><td><strong>Chemicals</strong> cut thin parts and PCBs</td></tr>
+            <tr><td>Finishing</td><td>Anodize, plate, <strong>powder coat</strong>, heat treat</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="finishing">Finishing</h2>
   <div class="rows">
 
     <article class="card row-card title-box">
@@ -62,7 +216,7 @@
   </div>
 
   <footer>
-    Source: Fabrication.pdf (tumbling notes); details from standard mass-finishing references. Created 2026-11-21.
+    Source: Fabrication.pdf (tumbling notes) and Fabrication_Technologies.pdf; details from standard references. Created 2026-11-21, updated 2026-11-21.
   </footer>
 
 </div>

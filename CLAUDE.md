@@ -8,7 +8,7 @@ Static website of tech reference pages (machinery, materials, fabrication, 3D pr
 `index.html` is the home page ("TECH INFO") with an alphabetical list of pages. Every other page sits in `html_pages/` (e.g. `html_pages/Materials.html`) and reaches shared files with `../` (see Conventions).
 
 ## Pages
-- `Fabrication.html`: fabrication and finishing processes (title boxes; first box: Tumbling). Source: data/Fabrication.pdf
+- `Fabrication.html`: Main Fabrication Technologies (title boxes Subtractive / Formative / Additive / Joining & Assembly / Composites & Other) and Finishing (Tumbling). Sources: data/Fabrication.pdf, data/Fabrication_Technologies.pdf
 - `Machinery_Equipment.html`: 25 shop machines in row cards, grouped Machining / Cutting / Forming / Joining / Grinding & Finishing, plus a laser / plasma / water jet table. Source: data/Machinery & Equipment.pdf
 - `Materials.html`: title boxes Stainless Steel / Carbon & Alloy Steel / Aluminum (grades in `tl-list`), plus a Quick Comparison table. Source: data/Materials.pdf
 - `Polymer_3D_Print.html`: Manufacturing Processes (Additive vs. Subtractive, 3D Printing Processes, Vacuum Casting) and Plastics (one table). Source: data/Polymer & 3D Print.pdf
