@@ -92,6 +92,55 @@
       </div>
     </article>
 
+    <article class="card row-card title-box" id="axes">
+      <div class="title-line"><h3>3-Axis vs. 5-Axis Machining</h3><span class="origin"><span class="label">Types</span><span class="value">3-axis · 4-axis · 3+2 · Simultaneous 5-axis</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Axes</dt><dd>Three <strong>linear</strong> axes: <strong>X</strong> (left-right), <strong>Y</strong> (front-back), <strong>Z</strong> (up-down). Three <strong>rotary</strong> axes turn around them: <strong>A</strong> (around X), <strong>B</strong> (around Y), <strong>C</strong> (around Z). A 5-axis machine has X, Y, Z plus two rotary axes (often A + C or B + C).</dd>
+          <dt>3-axis</dt><dd>The tool moves in X, Y, Z and always points <strong>straight down</strong>. It reaches only what it can see from the top, so each new side needs the part <strong>flipped and re-clamped</strong> (a new setup). Simplest, cheapest, easiest to program: plates, brackets, pockets, slots, flat and 2.5D parts.</dd>
+          <dt>4-axis</dt><dd>Adds one rotary axis (usually <strong>A</strong>, a rotary table or "4th axis"): the part turns so holes and features can be cut <strong>around</strong> it, e.g. cams, shafts with flats, parts machined on four sides.</dd>
+          <dt>3+2 (positional 5-axis)</dt><dd>The two rotary axes <strong>tilt the part to a fixed angle and lock</strong>, then the machine cuts in 3-axis mode. It reaches <strong>five sides in one setup</strong> and angled holes and faces; the most common use of 5-axis machines.</dd>
+          <dt>Simultaneous 5-axis</dt><dd>All five axes <strong>move at the same time</strong>, so the tool stays at the best angle to a <strong>curved surface</strong> as it cuts. Needed for impellers, turbine blades, propellers, complex molds, medical implants, and some undercuts.</dd>
+          <dt>Why 5-axis</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Fewer setups:</strong> one clamping instead of several, so better accuracy between features (no re-clamping error) and less handling</li>
+              <li><strong>Shorter tools:</strong> tilting the part lets a short, stiff tool reach deep areas: less chatter, better finish, faster cuts</li>
+              <li><strong>Complex shapes:</strong> smooth contoured surfaces and features that 3-axis cannot reach</li>
+            </ul>
+          </dd>
+          <dt>Why not 5-axis</dt><dd>Much <strong>higher machine cost</strong>, more complex <strong>CAM programming</strong> and simulation, higher <strong>collision</strong> risk, often a smaller work area, and skilled programmers needed. For simple parts, 3-axis is faster and cheaper.</dd>
+          <dt>5-axis layouts</dt><dd><strong>Trunnion</strong> (table-table: the table tilts and rotates; small to medium parts), <strong>head-head</strong> (the spindle head tilts and swivels; large, heavy parts), and <strong>table-head</strong> (one rotary axis in each).</dd>
+        </dl>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th></th><th>3-axis</th><th>3+2 axis</th><th>Simultaneous 5-axis</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Tool motion</strong></td><td>X, Y, Z; tool always vertical</td><td>Tilt to a fixed angle, then X, Y, Z</td><td>All 5 axes move together</td></tr>
+              <tr><td><strong>Sides per setup</strong></td><td>1 (top)</td><td>Up to 5</td><td>Up to 5</td></tr>
+              <tr><td><strong>Typical parts</strong></td><td>Plates, pockets, brackets</td><td>Multi-sided blocks, angled holes</td><td>Impellers, blades, molds, implants</td></tr>
+              <tr><td><strong>Machine cost</strong></td><td>Lowest</td><td>High</td><td>Highest</td></tr>
+              <tr><td><strong>Programming</strong></td><td>Simple</td><td>Moderate</td><td>Complex (CAM + simulation)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>3-axis</td><td>X, Y, Z; cuts <strong>from the top</strong>, flip for each side</td></tr>
+            <tr><td>4-axis</td><td>+ <strong>rotary table</strong>: cuts around the part</td></tr>
+            <tr><td>3+2</td><td><strong>Tilt, lock, cut</strong>: 5 sides in one setup</td></tr>
+            <tr><td>5-axis</td><td>All axes <strong>move together</strong>: curved surfaces</td></tr>
+            <tr><td>Trade-off</td><td>Fewer setups and short tools vs. <strong>cost and programming</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
     <article class="card row-card title-box">
       <div class="title-line"><h3>Why Machining Is Much Faster Today</h3><span class="origin"><span class="label">Factors</span><span class="value">Tool materials · Spindles · Toolpaths · Machines</span></span></div>
       <div class="more">
