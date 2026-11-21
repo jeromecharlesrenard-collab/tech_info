@@ -15,11 +15,20 @@
 
   <header>
     <h1>Materials</h1>
-    <p>Common metal grades: stainless steel, carbon and alloy steel, and aluminum, with key traits and typical uses.</p>
+    <p>Metals, composites, ceramics, resins, epoxies, and glues: key grades and types, traits, and uses, plus strength basics.</p>
   </header>
 
-  <p class="intro">The shop's most-used metal grades, from the most corrosion resistant to the lightest. Click a box to open it. Values marked ~ are approximate.</p>
+  <p class="intro">Shop materials from metals to adhesives, each grade or type with what it is good at and where it is used. Click a box to open it. Values marked ~ are approximate. Plastics are on <a href="Polymer_3D_Print.html">Polymer &amp; 3D Print</a>.</p>
 
+  <nav class="section-nav" aria-label="Page sections">
+    <a href="#metals">Metals</a>
+    <a href="#composites">Composites &amp; Other Materials</a>
+    <a href="#ceramics">Ceramics</a>
+    <a href="#adhesives">Resins, Epoxies &amp; Glues</a>
+    <a href="#properties">Strength</a>
+  </nav>
+
+  <h2 id="metals">Metals</h2>
   <div class="rows">
 
     <article class="card row-card title-box">
@@ -91,7 +100,7 @@
     </article>
 
     <article class="card row-card title-box">
-      <div class="title-line"><h3>Aluminum</h3><span class="origin"><span class="label">Grades</span><span class="value">6061-T6 · 7075-T6 · 5052 · 2024 · 3003</span></span></div>
+      <div class="title-line"><h3>Aluminum</h3><span class="origin"><span class="label">Grades</span><span class="value">6061-T6 · 7075-T6 · 5052 · 2024 · 3003 · 6063 · 5083</span></span></div>
       <div class="more">
         <dl class="tl-list">
           <dt>Series</dt><dd>The first digit gives the main alloying element: <strong>2xxx</strong> copper, <strong>3xxx</strong> manganese, <strong>5xxx</strong> magnesium, <strong>6xxx</strong> magnesium + silicon, <strong>7xxx</strong> zinc. 2xxx, 6xxx, and 7xxx are heat treatable; 3xxx and 5xxx are hardened by cold working.</dd>
@@ -99,7 +108,9 @@
           <dt>6061-T6</dt><dd><strong>General purpose, good strength, machinable</strong>; weldable and corrosion resistant, the default choice: frames, plates, fixtures, enclosures.</dd>
           <dt>7075-T6</dt><dd><strong>Highest strength, aerospace grade</strong>; nearly 2× the strength of 6061, close to many steels; poor weldability, less corrosion resistant: aircraft parts, high-stress components.</dd>
           <dt>5052</dt><dd><strong>Excellent corrosion resistance, formable</strong>; handles salt water and bends easily: boat hulls, fuel tanks, sheet metal enclosures.</dd>
+          <dt>5083</dt><dd><strong>Marine grade, weld-friendly</strong>; the strongest non-heat-treatable alloy, keeps its strength after welding: ship hulls, pressure vessels, cryogenic tanks.</dd>
           <dt>2024</dt><dd><strong>High strength, fatigue resistant, aerospace</strong>; poor corrosion resistance (often clad with pure aluminum, "Alclad") and poor weldability: aircraft skins and structures.</dd>
+          <dt>6063</dt><dd><strong>Extrusion grade, architectural and structural profiles</strong>; smooth surface that anodizes well, lower strength than 6061: window frames, railings, T-slot framing, trim.</dd>
           <dt>3003</dt><dd><strong>General purpose, good formability, low strength</strong>; cheap and easy to work: cookware, trim, ductwork, roofing.</dd>
         </dl>
       </div>
@@ -110,7 +121,8 @@
             <tr><td>Weight</td><td>About <strong>1/3</strong> of steel</td></tr>
             <tr><td>6061</td><td>The <strong>default</strong> aluminum: strong, weldable, machinable</td></tr>
             <tr><td>7075</td><td><strong>Strongest</strong>, but do not weld it</td></tr>
-            <tr><td>5052</td><td><strong>Marine</strong> sheet: bends and resists salt</td></tr>
+            <tr><td>5052 / 5083</td><td><strong>Marine</strong>: 5052 sheet bends, 5083 welds</td></tr>
+            <tr><td>6063</td><td><strong>Extrusions</strong> <em>(window frames, T-slot)</em></td></tr>
             <tr><td>2024</td><td><strong>Aircraft skin</strong>: fatigue resistant</td></tr>
             <tr><td>T6</td><td>= <strong>fully heat treated</strong></td></tr>
           </tbody>
@@ -118,35 +130,350 @@
       </div>
     </article>
 
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Other Metals</h3><span class="origin"><span class="label">Metals</span><span class="value">Copper alloys · Titanium · Nickel · Refractory · Light · Heavy</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Copper</dt><dd><strong>Electrical, heat transfer, plumbing</strong>; the best conductor after silver: wire, bus bars, heat exchangers, pipe.</dd>
+          <dt>Brass</dt><dd><strong>Fittings, valves, decorative</strong>; copper + <strong>zinc</strong>, machines very easily (C360 free-machining), gold look; also instruments.</dd>
+          <dt>Bronze</dt><dd><strong>Bushings, bearings, marine</strong>; copper + <strong>tin</strong> (or aluminum, phosphorus); low friction, resists salt water: boat propellers and hardware.</dd>
+          <dt>Beryllium copper</dt><dd><strong>High strength, electrical conductivity, tooling</strong>; the strongest copper alloy, non-sparking: springs, connectors, mold inserts, safety tools. Machining dust is toxic.</dd>
+          <dt>Titanium</dt><dd><strong>Aerospace, medical, high strength, low weight</strong>; about <strong>45% lighter than steel</strong> with similar strength (Grade 5, Ti-6Al-4V), very corrosion resistant, biocompatible.</dd>
+          <dt>Nickel</dt><dd><strong>Plating, high-temperature alloys</strong>; also the nickel in 300-series stainless and in batteries.</dd>
+          <dt>Inconel</dt><dd><strong>High temperature, aerospace, exhaust systems</strong>; nickel-chromium superalloy that keeps its strength red-hot: turbines, rocket engines, race exhaust. Hard to machine.</dd>
+          <dt>Cobalt alloys</dt><dd><strong>Wear and high temperature, medical implants</strong>: Stellite hard-facing and valve seats; cobalt-chrome hip and knee implants.</dd>
+          <dt>Zinc</dt><dd><strong>Die casting, galvanizing</strong>: Zamak die-cast parts; hot-dip <strong>galvanizing</strong> coats steel with zinc, which corrodes first and protects the steel.</dd>
+          <dt>Magnesium</dt><dd><strong>Lightweight structural, aerospace</strong>; the lightest structural metal (~1.8 g/cm³, about 2/3 of aluminum): wheels, housings, laptop frames. Chips and dust are flammable.</dd>
+          <dt>Tungsten</dt><dd><strong>Tooling, high temperature, wear resistant</strong>; the highest melting point of all metals (<strong>3,422 °C</strong>) and very dense (19.3 g/cm³): TIG electrodes, counterweights; base of tungsten carbide.</dd>
+          <dt>Molybdenum</dt><dd><strong>High-temperature tooling, alloying element</strong>; melts at ~2,620 °C: furnace parts; the "moly" in chromoly steel and 316 stainless.</dd>
+          <dt>Lead</dt><dd><strong>Radiation shielding, weights</strong>; dense (11.3 g/cm³) and soft; also batteries. Toxic: handle with care.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Copper</td><td>Best <strong>conductor</strong> after silver</td></tr>
+            <tr><td>Brass / bronze</td><td>Copper + <strong>zinc</strong> / copper + <strong>tin</strong></td></tr>
+            <tr><td>Titanium</td><td>Steel strength, <strong>half the weight</strong></td></tr>
+            <tr><td>Inconel</td><td>Strong when <strong>red-hot</strong></td></tr>
+            <tr><td>Magnesium</td><td><strong>Lightest</strong> structural metal</td></tr>
+            <tr><td>Tungsten</td><td><strong>Highest melting</strong> point of all metals</td></tr>
+            <tr><td>Zinc</td><td><strong>Galvanizing</strong> protects steel</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
   </div>
 
-  <h2>Quick Comparison</h2>
-  <div class="recap" hidden>
-    <table class="recap-table">
-      <thead><tr><th>Item</th><th>Remember</th></tr></thead>
-      <tbody>
-        <tr><td>Lightest</td><td><strong>Aluminum</strong>, 1/3 the weight of steel</td></tr>
-        <tr><td>Most rust resistant</td><td><strong>Stainless</strong> (316 best)</td></tr>
-        <tr><td>Cheapest</td><td><strong>Carbon steel</strong> <em>(but it must be painted or coated)</em></td></tr>
-        <tr><td>Magnet test</td><td>Sticks to carbon steel and 400 stainless, <strong>not</strong> to 300 stainless or aluminum</td></tr>
-      </tbody>
-    </table>
-  </div>
+  <p class="table-title">Metals Quick Comparison</p>
   <div class="table-wrap">
     <table>
       <thead>
         <tr><th>Family</th><th>Density</th><th>Magnetic</th><th>Corrosion</th><th>Welding</th><th>Cost</th><th>Go-to</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>Stainless</strong></td><td>~8.0 g/cm³</td><td>300 no, 400 yes</td><td>Excellent</td><td>Good</td><td>High</td><td>304</td></tr>
         <tr><td><strong>Carbon steel</strong></td><td>~7.85 g/cm³</td><td>Yes</td><td>Poor (rusts)</td><td>Easiest</td><td>Lowest</td><td>A36</td></tr>
+        <tr><td><strong>Stainless</strong></td><td>~8.0 g/cm³</td><td>300 no, 400 yes</td><td>Excellent</td><td>Good</td><td>High</td><td>304</td></tr>
         <tr><td><strong>Aluminum</strong></td><td>~2.7 g/cm³</td><td>No</td><td>Good</td><td>Harder (TIG)</td><td>Medium</td><td>6061-T6</td></tr>
+        <tr><td><strong>Titanium</strong></td><td>~4.5 g/cm³</td><td>No</td><td>Excellent</td><td>Hard (TIG, full gas shield)</td><td>Very high</td><td>Grade 5</td></tr>
+        <tr><td><strong>Copper / brass</strong></td><td>~8.5 – 8.9 g/cm³</td><td>No</td><td>Good</td><td>Brazed or soldered</td><td>High</td><td>C110 / C360</td></tr>
       </tbody>
     </table>
   </div>
 
+  <h2 id="composites">Composites &amp; Other Materials</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Fiber Composites</h3><span class="origin"><span class="label">Types</span><span class="value">GFRP · CFRP · Kevlar · Laminates · SMC / BMC · CMC · MMC</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>What it is</dt><dd><strong>Fibers</strong> (strength) held in a <strong>matrix</strong> (usually resin) that shares the load; FRP = Fiber-Reinforced Polymer. How they are made: see <a href="Fabrication.html">Fabrication</a> (composite layup).</dd>
+          <dt>Fibers</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Fiberglass (GFRP):</strong> glass fiber + resin; general structural, cheapest</li>
+              <li><strong>Carbon fiber (CFRP):</strong> high strength, low weight; aerospace and performance</li>
+              <li><strong>Kevlar (AFRP):</strong> aramid fiber; impact and ballistic resistant</li>
+              <li><strong>Basalt fiber:</strong> volcanic rock fiber; corrosion resistant, low cost</li>
+              <li><strong>Boron fiber:</strong> very high stiffness; aerospace and defense</li>
+              <li><strong>Natural fibers:</strong> flax, hemp, jute + resin; eco grade</li>
+            </ul>
+          </dd>
+          <dt>Laminates</dt><dd><strong>Garolite G10 / FR4:</strong> fiberglass-epoxy laminate for electrical and structural panels (FR4 = flame retardant, the circuit-board base). <strong>Phenolic laminates:</strong> paper or fabric + phenolic resin; wear resistant (bushings, insulators).</dd>
+          <dt>Molding compounds</dt><dd><strong>SMC</strong> (Sheet Molding Compound): chopped fiber + resin sheets, pressed into automotive panels. <strong>BMC</strong> (Bulk Molding Compound): dough-like, molded into structural and electrical parts.</dd>
+          <dt>Thermoplastic composites</dt><dd><strong>PEEK/CF, PA/CF</strong>: carbon fiber in a meltable plastic; high performance, can be reshaped, welded, and 3D printed.</dd>
+          <dt>Advanced matrices</dt><dd><strong>CMC</strong> (Ceramic Matrix): very high temperature, aerospace and defense. <strong>MMC</strong> (Metal Matrix, e.g. aluminum + silicon carbide): wear resistant. <strong>Carbon-carbon</strong> (graphite): extreme temperature, aircraft and race brakes, heat shields.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Composite</td><td><strong>Fiber</strong> for strength + <strong>resin</strong> to hold it</td></tr>
+            <tr><td>Fiberglass</td><td><strong>Cheap</strong>, all-purpose</td></tr>
+            <tr><td>Carbon fiber</td><td><strong>Strongest for its weight</strong></td></tr>
+            <tr><td>Kevlar</td><td><strong>Impact</strong> and bullets</td></tr>
+            <tr><td>G10 / FR4</td><td>Fiberglass board <em>(circuit boards)</em></td></tr>
+            <tr><td>Carbon-carbon</td><td><strong>Extreme heat</strong>: brakes, heat shields</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Sandwich Cores</h3><span class="origin"><span class="label">Cores</span><span class="value">Honeycomb · Balsa · Foam · Syntactic foam</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Idea</dt><dd>Two thin, strong skins glued to a <strong>light core</strong>: like an I-beam, the core spaces the skins apart, giving a very <strong>stiff, light panel</strong>.</dd>
+          <dt>Nomex honeycomb</dt><dd><strong>Aramid</strong> paper core; aerospace sandwich panels (floors, interiors).</dd>
+          <dt>Aluminum honeycomb</dt><dd><strong>Lightweight</strong> metal core; aerospace panels, energy absorbers.</dd>
+          <dt>Balsa core</dt><dd><strong>End-grain balsa</strong> wood; lightweight sandwich for boat hulls and decks, aerospace.</dd>
+          <dt>Foam core</dt><dd><strong>PVC or PET foam</strong>; marine and aerospace sandwich, does not rot.</dd>
+          <dt>Syntactic foam</dt><dd>Resin filled with <strong>hollow glass microspheres</strong>; light yet crush resistant: deep-sea buoyancy, aerospace.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Sandwich</td><td>Strong <strong>skins</strong> + light <strong>core</strong> = stiff and light</td></tr>
+            <tr><td>Honeycomb</td><td><strong>Nomex</strong> or <strong>aluminum</strong>: aerospace</td></tr>
+            <tr><td>Boats</td><td><strong>Balsa</strong> or <strong>foam</strong> cores</td></tr>
+            <tr><td>Syntactic foam</td><td>Glass bubbles: <strong>deep sea</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Other Materials</h3><span class="origin"><span class="label">Materials</span><span class="value">Wood · Rubber · Glass · Quartz · Concrete · Aerogel · Graphite</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Wood / plywood</dt><dd>Still widely used for <strong>jigs and fixtures</strong>: cheap, easy to cut, and kind to finished parts.</dd>
+          <dt>Rubber / elastomers</dt><dd><strong>Gaskets, seals, vibration damping</strong>: nitrile (oil), EPDM (weather), neoprene, silicone (heat), Viton (fuel, chemicals).</dd>
+          <dt>Glass</dt><dd><strong>Tempered</strong> (4 – 5× stronger, breaks into small cubes), <strong>laminated</strong> (holds together when broken), <strong>borosilicate</strong> (thermal shock resistant, labware).</dd>
+          <dt>Quartz / fused silica</dt><dd>Very pure glass: <strong>optical, semiconductor, high temperature</strong>; almost no thermal expansion.</dd>
+          <dt>Concrete / UHPC</dt><dd><strong>Structural and architectural</strong> fabrication; UHPC (Ultra-High Performance Concrete) is several times stronger than normal concrete, for thin precast panels.</dd>
+          <dt>Aerogel</dt><dd><strong>Ultra-low density</strong>, mostly air: the best solid thermal insulator.</dd>
+          <dt>Pyrolytic graphite</dt><dd>Layered graphite that spreads heat very well along its plane: <strong>thermal management</strong>, aerospace.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Wood</td><td>Cheap <strong>jigs and fixtures</strong></td></tr>
+            <tr><td>Rubber</td><td><strong>Seals</strong> and damping</td></tr>
+            <tr><td>Glass</td><td>Tempered = <strong>strong</strong>; laminated = <strong>holds together</strong>; borosilicate = <strong>heat proof</strong></td></tr>
+            <tr><td>Aerogel</td><td><strong>Best</strong> insulator <em>(mostly air)</em></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="ceramics">Ceramics</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Technical Ceramics</h3><span class="origin"><span class="label">Types</span><span class="value">Alumina · Zirconia · SiC · Si₃N₄ · B₄C · WC · HAp · Cordierite</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Traits</dt><dd>Very <strong>hard</strong>, heat and wear resistant, usually <strong>electrical insulators</strong>, but <strong>brittle</strong>; shaped by pressing and sintering, finished by diamond grinding.</dd>
+          <dt>Alumina (Al₂O₃)</dt><dd><strong>General purpose</strong>, electrical insulation, wear resistant; the most common technical ceramic (spark-plug insulators, wear liners).</dd>
+          <dt>Zirconia (ZrO₂)</dt><dd><strong>Highest strength and toughness</strong> of the ceramics: dental crowns, medical, ceramic knives.</dd>
+          <dt>Silicon carbide (SiC)</dt><dd><strong>Extreme hardness</strong>, high temperature, abrasion resistant: abrasives, pump seals, armor, kiln parts.</dd>
+          <dt>Silicon nitride (Si₃N₄)</dt><dd><strong>High strength, thermal shock resistant</strong>: hybrid ceramic bearing balls, engine and cutting-tool parts.</dd>
+          <dt>Boron carbide (B₄C)</dt><dd>The <strong>hardest</strong> of these (after diamond and cubic boron nitride), and light: <strong>ballistic armor</strong>, blast nozzles.</dd>
+          <dt>Tungsten carbide (WC)</dt><dd><strong>Cutting tools, wear parts</strong>; the densest here (~15.6 g/cm³); usually bonded with cobalt ("carbide" end mills and inserts).</dd>
+          <dt>Hydroxyapatite (HAp)</dt><dd><strong>Biomedical</strong>: the mineral of bone; implant coatings and bone grafts.</dd>
+          <dt>Cordierite</dt><dd><strong>Thermal shock resistant</strong>: kiln shelves, catalytic-converter honeycombs.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Ceramics</td><td><strong>Hard</strong> and heat proof, but <strong>brittle</strong></td></tr>
+            <tr><td>Alumina</td><td>The <strong>everyday</strong> ceramic: insulators</td></tr>
+            <tr><td>Zirconia</td><td><strong>Toughest</strong>: dental crowns</td></tr>
+            <tr><td>Boron carbide</td><td><strong>Armor</strong></td></tr>
+            <tr><td>Tungsten carbide</td><td><strong>Cutting tools</strong> <em>("carbide")</em></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="adhesives">Resins, Epoxies &amp; Glues</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Resins</h3><span class="origin"><span class="label">Types</span><span class="value">Polyester · Vinylester · Epoxy · Phenolic · PU · BMI · PEEK</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Resin vs. epoxy</dt><dd><strong>Resin</strong> is the broad term for the matrix that holds fibers or fills a mold; <strong>epoxy</strong> is one specific resin chemistry, the highest-performance common category.</dd>
+          <dt>Polyester</dt><dd><strong>General purpose, low cost</strong>: fiberglass laminating (boats, tubs).</dd>
+          <dt>Vinylester</dt><dd><strong>Stronger</strong>, chemical and corrosion resistant: tanks, pipes, boat hulls.</dd>
+          <dt>Epoxy</dt><dd><strong>Highest strength</strong>: aerospace and structural composites (see Epoxies).</dd>
+          <dt>Phenolic</dt><dd><strong>High temperature</strong>, fire resistant: electrical laminates, ablative heat shields.</dd>
+          <dt>Polyurethane</dt><dd><strong>Flexible to rigid</strong>: casting and encapsulation (also vacuum casting).</dd>
+          <dt>Bismaleimide (BMI)</dt><dd><strong>High-temperature</strong> aerospace composites, above epoxy's range.</dd>
+          <dt>Cyanate ester</dt><dd><strong>Extreme temperature, low dielectric</strong> loss: aerospace, radomes, satellites.</dd>
+          <dt>PEEK</dt><dd><strong>Ultra-high-performance thermoplastic</strong> matrix (melts rather than cures).</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Resin</td><td>The <strong>broad</strong> term; epoxy is one type</td></tr>
+            <tr><td>Polyester</td><td><strong>Cheapest</strong> <em>(boats, tubs)</em></td></tr>
+            <tr><td>Vinylester</td><td><strong>Chemical</strong> resistant</td></tr>
+            <tr><td>Epoxy</td><td><strong>Strongest</strong></td></tr>
+            <tr><td>Phenolic / BMI / cyanate</td><td><strong>High heat</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Epoxies</h3><span class="origin"><span class="label">Types</span><span class="value">BPA · BPF · Novolac · Marine · Film · Conductive</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Bisphenol-A (BPA)</dt><dd>The <strong>most common</strong> structural epoxy.</dd>
+          <dt>Bisphenol-F</dt><dd><strong>Lower viscosity</strong>, more chemical resistant: coatings, flooring.</dd>
+          <dt>Novolac</dt><dd><strong>High temperature</strong>, strong chemical resistance: tank linings.</dd>
+          <dt>Cycloaliphatic</dt><dd><strong>UV resistant</strong> (does not yellow): outdoor electrical insulators.</dd>
+          <dt>Flexible</dt><dd>Absorbs <strong>impact and vibration</strong> in joints.</dd>
+          <dt>Marine</dt><dd><strong>Water and moisture resistant</strong>: boat building.</dd>
+          <dt>Structural film</dt><dd>Epoxy in <strong>film</strong> form: aerospace prepreg and bonding, autoclave cured.</dd>
+          <dt>Conductive</dt><dd>Silver-filled: <strong>electronics</strong>, EMI shielding.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>BPA</td><td>The <strong>standard</strong> epoxy</td></tr>
+            <tr><td>Novolac</td><td><strong>Heat and chemicals</strong></td></tr>
+            <tr><td>Cycloaliphatic</td><td><strong>Outdoors</strong> (UV)</td></tr>
+            <tr><td>Conductive</td><td><strong>Silver</strong> filled: electronics</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Glues &amp; Adhesives</h3><span class="origin"><span class="label">Groups</span><span class="value">Instant · Structural · Flexible · Wood · Tapes &amp; films · Specialty</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Instant and fast</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Cyanoacrylate</strong> (CA, super glue): instant bond, rigid, most materials</li>
+              <li><strong>Contact cement:</strong> rubber and laminate; bonds instantly on contact</li>
+              <li><strong>Hot melt</strong> (EVA): fast, low strength; packaging and assembly</li>
+              <li><strong>UV-cure:</strong> fast, precise; optical and electronic parts</li>
+            </ul>
+          </dd>
+          <dt>Structural</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Epoxy</strong> (2-part): high strength, fills gaps</li>
+              <li><strong>Acrylic</strong> (MMA): high strength, impact resistant; bonds metals and plastics with little prep</li>
+              <li><strong>Construction adhesive:</strong> general heavy duty, fills gaps</li>
+              <li><strong>MS polymer</strong> (modified silicone): flexible, structural, paintable; construction</li>
+            </ul>
+          </dd>
+          <dt>Flexible and sealing</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Polyurethane</strong> (PU glue): flexible, waterproof, expands as it cures</li>
+              <li><strong>Silicone:</strong> flexible, high temperature, waterproof sealant</li>
+              <li><strong>Neoprene:</strong> flexible, heat resistant; automotive and industrial</li>
+              <li><strong>Rubber cement:</strong> flexible, repositionable; paper and gaskets</li>
+            </ul>
+          </dd>
+          <dt>Wood and porous</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>PVA</strong> (polyvinyl acetate, wood glue): porous materials, woodworking</li>
+              <li><strong>Hide glue:</strong> traditional, reversible with heat and water; instruments</li>
+              <li><strong>Cementitious:</strong> tile, stone, masonry</li>
+            </ul>
+          </dd>
+          <dt>Tapes, films, sprays</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Pressure sensitive</strong> (PSA): tapes and labels, repositionable</li>
+              <li><strong>Spray adhesive:</strong> large areas; foam, fabric, laminate</li>
+              <li><strong>Thermoplastic film:</strong> heat activated; aerospace laminates</li>
+            </ul>
+          </dd>
+          <dt>Specialty</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Anaerobic</strong> (Loctite): cures without air, between metal parts; threadlocking, retaining, gasketing</li>
+              <li><strong>Conductive</strong> (silver epoxy): electronics, EMI shielding</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Quick fix</td><td><strong>CA</strong> (super glue)</td></tr>
+            <tr><td>Strongest</td><td><strong>2-part epoxy</strong> or <strong>acrylic (MMA)</strong></td></tr>
+            <tr><td>Wood</td><td><strong>PVA</strong> wood glue</td></tr>
+            <tr><td>Flexible / waterproof</td><td><strong>Silicone</strong>, <strong>PU</strong>, MS polymer</td></tr>
+            <tr><td>Threads</td><td><strong>Loctite</strong> (anaerobic)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="properties">Strength</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Strength &amp; Material Properties</h3><span class="origin"><span class="label">Terms</span><span class="value">Tensile · Yield · Impact · Stiffness · Hardness</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Tensile strength</dt><dd>The <strong>maximum pull</strong> (stress) a material takes before it <strong>breaks</strong> (ultimate tensile strength, UTS).</dd>
+          <dt>Yield strength</dt><dd>The stress where it starts to <strong>bend for good</strong> (permanent deformation); below it, the part springs back. Parts are designed to stay below yield.</dd>
+          <dt>Impact strength</dt><dd>Energy absorbed in a <strong>sudden hit</strong> without breaking (Charpy or Izod test) = <strong>toughness</strong>.</dd>
+          <dt>Stiffness</dt><dd>Resistance to <strong>flexing</strong> under load (elastic modulus); steel ~200 GPa, aluminum ~70 GPa (1/3), so aluminum bends 3× more for the same shape.</dd>
+          <dt>Hardness</dt><dd>Resistance to <strong>scratching and denting</strong> (Rockwell HRC, Brinell HB).</dd>
+          <dt>Units</dt><dd>1 <strong>ksi</strong> = 1,000 psi ≈ <strong>6.9 MPa</strong>.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Tensile</td><td>Pull until it <strong>breaks</strong></td></tr>
+            <tr><td>Yield</td><td>Pull until it <strong>stays bent</strong></td></tr>
+            <tr><td>Impact</td><td><strong>Toughness</strong>: survives a hit</td></tr>
+            <tr><td>Stiffness</td><td>How little it <strong>flexes</strong></td></tr>
+            <tr><td>Hardness</td><td>Resists <strong>scratches</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </div>
+
   <footer>
-    Source: Materials.pdf (grade list); details from standard material references. Created 2026-11-21.
+    Source: MATERIALS.docx (grade and type lists) and POLYMER &amp; 3D PRINT.docx (strength terms); details from standard material references. Created 2026-11-21, updated 2026-11-21.
   </footer>
 
 </div>

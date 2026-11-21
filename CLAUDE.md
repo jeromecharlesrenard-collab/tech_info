@@ -8,10 +8,11 @@ Static website of tech reference pages (machinery, materials, fabrication, 3D pr
 `index.html` is the home page ("TECH INFO") with an alphabetical list of pages. Every other page sits in `html_pages/` (e.g. `html_pages/Materials.html`) and reaches shared files with `../` (see Conventions).
 
 ## Pages
-- `Fabrication.html`: Main Fabrication Technologies (title boxes Subtractive / Formative / Additive / Joining & Assembly / Composites & Other) and Finishing (Tumbling). Sources: data/Fabrication.pdf, data/Fabrication_Technologies.pdf
-- `Machinery_Equipment.html`: 25 shop machines in row cards, grouped Machining / Cutting / Forming / Joining / Grinding & Finishing, plus a laser / plasma / water jet table. Source: data/Machinery & Equipment.pdf
-- `Materials.html`: title boxes Stainless Steel / Carbon & Alloy Steel / Aluminum (grades in `tl-list`), plus a Quick Comparison table. Source: data/Materials.pdf
-- `Polymer_3D_Print.html`: Manufacturing Processes (Additive vs. Subtractive, 3D Printing Processes, Vacuum Casting) and Plastics (one table). Source: data/Polymer & 3D Print.pdf
+- `Fabrication.html`: Main Fabrication Technologies (title boxes Subtractive / Formative / Additive / Joining & Assembly / Composites & Other) and Finishing (Part Finishes, Tumbling). Sources: data/Fabrication_Technologies.pdf, data/POLYMER & 3D PRINT.docx (PART FINISHES); tumbling details from the earlier Fabrication.pdf notes.
+- `Machinery_Equipment.html`: 25 shop machines in row cards (3 short facts each: Action / Materials / Best for, max ~18 characters so they fit), grouped Machining / Cutting / Forming / Joining / Grinding & Finishing, plus a laser / plasma / water jet table. Source: the earlier Machinery & Equipment.pdf (data/MACHINERY & EQUIPMENT.docx currently holds the Polymer text by mistake).
+- `Materials.html`: Metals (Stainless, Carbon & Alloy, Aluminum, Other Metals + comparison table), Composites & Other Materials (Fiber Composites, Sandwich Cores, Other Materials), Ceramics, Resins / Epoxies / Glues, Strength. Sources: data/MATERIALS.docx; strength terms from data/POLYMER & 3D PRINT.docx (STRENGTH).
+- `Polymer_3D_Print.html`: Manufacturing Processes (Additive vs. Subtractive, 3D Printing Processes, Vacuum Casting) and Plastics (one table, 16 plastics). Source: data/POLYMER & 3D PRINT.docx.
+- Source data in data/ is the user's master list: when it changes, redraft the pages to match (keep every item, group logically, correct and report errors). Title-box subtitles (`.origin`) must fit on one line (~60 characters).
 
 ## Folder Structure
 ```
