@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machinery &amp; Equipment</title>
+<link rel="icon" type="image/png" href="../assets/tech_info.png">
+<link rel="stylesheet" href="../assets/kb_style.css">
+<script src="../kb_config.js"></script>
+<script src="../assets/kb_common.js"></script>
+</head>
+<body>
+<a class="return-arrow" href="../index.html" title="Back to Tech Info" aria-label="Back to Tech Info"><img src="../assets/return_arrow.svg" alt=""></a>
+<div class="page">
+
+  <header>
+    <h1>Machinery &amp; Equipment</h1>
+    <p>Shop machines by job: machining, cutting, forming, joining, and finishing, with what each one does best.</p>
+  </header>
+
+  <p class="intro">The 25 shop machines, grouped by what they do to the part: <strong>remove</strong> material (machining, cutting), <strong>shape</strong> it (forming), <strong>join</strong> it, or <strong>finish</strong> it. Click a card to see more.</p>
+
+  <nav class="section-nav" aria-label="Page sections">
+    <a href="#machining">Machining</a>
+    <a href="#cutting">Cutting</a>
+    <a href="#forming">Forming</a>
+    <a href="#joining">Joining</a>
+    <a href="#finishing">Grinding &amp; Finishing</a>
+  </nav>
+
+  <h2 id="machining">Machining</h2>
+  <div class="recap" hidden>
+    <table class="recap-table">
+      <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+      <tbody>
+        <tr><td>Mill</td><td>The <strong>tool spins</strong>, the part moves <em>(flat faces, pockets, slots)</em></td></tr>
+        <tr><td>Lathe</td><td>The <strong>part spins</strong>, the tool moves <em>(round parts)</em></td></tr>
+        <tr><td>CNC</td><td><strong>Computer</strong>-controlled: the same part every time</td></tr>
+        <tr><td>Turn-mill</td><td>Lathe + mill in <strong>one setup</strong></td></tr>
+        <tr><td>EDM</td><td>Cuts with <strong>sparks</strong>: any conductive metal, even hardened</td></tr>
+        <tr><td>CNC router</td><td>Big, fast gantry for <strong>wood, plastic, sheet</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rows">
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Milling Machine</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Spinning cutter</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Metals, plastics</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Flat faces, slots</span></div>
+      </div>
+      <p class="desc">A spinning multi-tooth cutter removes metal while the part, clamped on an X-Y table, moves under it; the spindle or knee sets the Z depth.</p>
+      <div class="more">
+        <dl>
+          <dt>Types</dt><dd><strong>Vertical</strong> (knee mill, the classic "Bridgeport" style) or <strong>horizontal</strong> spindle; manual or CNC.</dd>
+          <dt>Tools</dt><dd>End mills, face mills, drills, reamers, taps; a digital readout (DRO) shows the table position.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Lathe</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Spinning part</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Metals, plastics</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Round parts</span></div>
+      </div>
+      <p class="desc">The part turns in a chuck while a single-point tool moves along or across it, so everything it makes is round.</p>
+      <div class="more">
+        <dl>
+          <dt>Operations</dt><dd><strong>Turning</strong> (outside diameter), <strong>facing</strong> (end), <strong>boring</strong> (inside), <strong>threading</strong>, drilling from the tailstock, knurling, parting off.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>CNC Mill &amp; Lathe</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Computer control</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Metals, plastics</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Repeat parts</span></div>
+      </div>
+      <p class="desc">CNC (Computer Numerical Control) mills and lathes follow a G-code program made in CAM software, so every part comes out the same.</p>
+      <div class="more">
+        <dl>
+          <dt>Axes</dt><dd><strong>3-axis</strong> mill (X, Y, Z) for most parts; <strong>4- and 5-axis</strong> machines add rotation to reach several faces in one setup.</dd>
+          <dt>Extras</dt><dd>Automatic tool changer, coolant, probing; a CNC lathe is often called a <strong>turning center</strong>.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Turn-Mill Center</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Turn + mill</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Metals</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">One-setup parts</span></div>
+      </div>
+      <p class="desc">A CNC lathe with <strong>live (driven) tools</strong>, often a Y axis and a sub-spindle, so it turns, mills flats, and drills cross holes without moving the part to another machine.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Drill Press</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Vertical drilling</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Most materials</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Square holes</span></div>
+      </div>
+      <p class="desc">Drills holes square to the table with steady pressure; also used for reaming, countersinking, and tapping. Clamp the part; never hold it by hand.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>EDM</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Electric sparks</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Conductive only</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Hardened steel</span></div>
+      </div>
+      <p class="desc">Removes metal with thousands of small electric sparks in a dielectric fluid; there is no cutting force, so it works on any conductive metal, however hard.</p>
+      <div class="more">
+        <dl>
+          <dt>Wire EDM</dt><dd>A thin brass wire cuts through profiles (punches, dies, gears) with very tight tolerances.</dd>
+          <dt>Sinker (ram) EDM</dt><dd>A shaped electrode "burns" its mirror image into the part: mold cavities, blind pockets.</dd>
+          <dt>Hole-drill EDM</dt><dd>Fast small holes, e.g. the start hole for a wire EDM cut.</dd>
+          <dt>Limits</dt><dd>Slow; conductive materials only.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>CNC Router</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Gantry spindle</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Wood, plastics</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Large panels</span></div>
+      </div>
+      <p class="desc">A large flat bed (often 4 × 8 ft) for cutting and carving panels; faster but less rigid than a CNC mill, so it is meant for softer materials.</p>
+    </article>
+
+  </div>
+
+  <h2 id="cutting">Cutting</h2>
+  <div class="recap" hidden>
+    <table class="recap-table">
+      <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+      <tbody>
+        <tr><td>Laser</td><td><strong>Finest</strong> cut on thin to medium sheet</td></tr>
+        <tr><td>Plasma</td><td><strong>Fast and cheap</strong> on thick steel; <strong>metal only</strong></td></tr>
+        <tr><td>Water jet</td><td>Cuts <strong>almost anything</strong>, <strong>no heat</strong>; slowest</td></tr>
+        <tr><td>Band saw</td><td>Vertical = <strong>curves</strong>; horizontal = bar <strong>to length</strong></td></tr>
+        <tr><td>Shear</td><td><strong>Straight</strong> sheet cuts, no kerf, no heat</td></tr>
+        <tr><td>Cut-off wheel</td><td>Quick <strong>abrasive</strong> chop cuts <em>(sparks and burrs)</em></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rows">
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Laser Cutter</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Light beam</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Sheet, acrylic</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Fine detail</span></div>
+      </div>
+      <p class="desc">Very narrow kerf and clean edges on sheet metal, acrylic, and wood; an assist gas (oxygen, nitrogen, or air) blows the melt away.</p>
+      <div class="more">
+        <dl>
+          <dt>Types</dt><dd><strong>Fiber</strong> lasers for metals (steel, stainless, aluminum); <strong>CO₂</strong> lasers for wood, acrylic, and other non-metals.</dd>
+          <dt>Caution</dt><dd>Never cut <strong>PVC</strong> or vinyl: it releases toxic, corrosive chlorine gas.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Plasma Cutter</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Ionized-gas arc</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Conductive metals</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Thick steel</span></div>
+      </div>
+      <p class="desc">Cuts any electrically conductive metal quickly, by hand or on a CNC table; the edge is rougher, with a wider heat-affected zone, than laser or water jet.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Water Jet Cutter</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Water + abrasive</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Almost anything</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">No-heat cuts</span></div>
+      </div>
+      <p class="desc">Water at <strong>~60,000 psi</strong> or more, mixed with garnet abrasive, cuts metal, stone, glass, composites, and rubber, with no heat-affected zone or warping.</p>
+      <div class="more">
+        <dl>
+          <dt>Pure water jet</dt><dd>Without abrasive, for soft materials: foam, rubber, gaskets, food.</dd>
+          <dt>Limits</dt><dd>Slower and costlier to run than plasma; slight taper on thick cuts.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Band Saw</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Blade loop</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Metal, wood</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Curves</span></div>
+      </div>
+      <p class="desc">The vertical band saw cuts shapes by hand-feeding the part across its table; blade speed is set for the material (slow for steel, fast for wood and aluminum).</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Horizontal Bandsaw</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Self-feeding blade</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Bar, tube, pipe</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Cut to length</span></div>
+      </div>
+      <p class="desc">The stock is held in a vise; the saw head feeds down by itself and shuts off at the end of the cut. Many models also swivel for miter cuts.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Sheet Metal Shear</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Blade on blade</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Sheet metal</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Straight cuts</span></div>
+      </div>
+      <p class="desc">Cuts sheet like scissors, with no kerf, no heat, and no sparks; foot-operated for thin sheet, hydraulic (guillotine) for thicker plate.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Disk Wheel Cutter</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Abrasive disk</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Bar, tube, angle</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Quick chop cuts</span></div>
+      </div>
+      <p class="desc">The abrasive chop saw grinds through metal fast but leaves heat, sparks, and a burr; a <strong>cold saw</strong> (slow toothed blade) gives a cleaner, burr-free cut.</p>
+    </article>
+
+  </div>
+
+  <p class="table-title">Laser vs. Plasma vs. Water Jet</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Cutter</th><th>Materials</th><th>Typical thickness</th><th>Edge</th><th>Heat</th><th>Cost to run</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Laser</strong></td><td>Metals (fiber); wood, acrylic (CO₂)</td><td>Thin sheet to ~1 in (25 mm) steel</td><td>Finest</td><td>Small heat zone</td><td>Medium</td></tr>
+        <tr><td><strong>Plasma</strong></td><td>Conductive metals only</td><td>Up to ~2 in (50 mm) steel</td><td>Roughest</td><td>Largest heat zone</td><td>Lowest</td></tr>
+        <tr><td><strong>Water jet</strong></td><td>Almost anything</td><td>Up to ~6 in (150 mm) and more</td><td>Fine (slight taper)</td><td>None</td><td>Highest</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="forming">Forming</h2>
+  <div class="recap" hidden>
+    <table class="recap-table">
+      <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+      <tbody>
+        <tr><td>Brake press</td><td><strong>Bends</strong> sheet along a straight line</td></tr>
+        <tr><td>Punch press</td><td><strong>Punches</strong> holes and shapes in sheet</td></tr>
+        <tr><td>Hydraulic press</td><td><strong>Raw force</strong> in tons: press, straighten, form</td></tr>
+        <tr><td>Pipe bender</td><td>Bends tube <strong>without kinking</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rows">
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Brake Press</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Punch into V-die</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Sheet, plate</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Straight bends</span></div>
+      </div>
+      <p class="desc">Also called a <strong>press brake</strong>: bends sheet and plate along a straight line. A CNC back gauge sets each bend position; capacity is rated in tons and bed length.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Punch Press</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Punch and die</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Sheet metal</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Holes, blanks</span></div>
+      </div>
+      <p class="desc">Punches holes and shapes in one stroke; a CNC <strong>turret punch</strong> holds many tools and fires hundreds of hits per minute for high-volume sheet parts.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Hydraulic Press</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Hydraulic force</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Metal parts</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Press, straighten</span></div>
+      </div>
+      <p class="desc">Slow, controlled force rated in tons (a 20-ton H-frame shop press is common): pressing bearings and bushings in or out, straightening shafts, forming, and stamping.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Pipe Bender</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Bend die</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Pipe, tube</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Kink-free bends</span></div>
+      </div>
+      <p class="desc">Bends pipe and tube without kinking or flattening; a <strong>mandrel</strong> inside the tube supports tight bends. A bend is specified by its centerline radius (CLR).</p>
+    </article>
+
+  </div>
+
+  <h2 id="joining">Joining</h2>
+  <div class="recap" hidden>
+    <table class="recap-table">
+      <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+      <tbody>
+        <tr><td>MIG</td><td><strong>Wire-fed</strong>: fastest and easiest <em>(the "glue gun")</em></td></tr>
+        <tr><td>TIG</td><td><strong>Cleanest</strong> and most precise; aluminum and stainless</td></tr>
+        <tr><td>Spot</td><td>Clamp + current: <strong>overlapping sheets</strong>, no filler</td></tr>
+        <tr><td>Laser welder</td><td>Narrow weld, <strong>little heat</strong>, little warping</td></tr>
+        <tr><td>Rivets</td><td><strong>No heat</strong>; join different metals <em>(pop rivets from one side)</em></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rows">
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>TIG / MIG / Spot Welder</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Arc or current</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Most metals</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Permanent joints</span></div>
+      </div>
+      <p class="desc">Three common welding methods: MIG for speed, TIG for precision and looks, spot welding for overlapping sheet.</p>
+      <div class="more">
+        <dl>
+          <dt>MIG (GMAW)</dt><dd>Wire electrode fed through the gun with shielding gas (often 75% argon / 25% CO₂ for steel); fast, easy to learn, the workhorse of steel fabrication.</dd>
+          <dt>TIG (GTAW)</dt><dd>Non-consumable <strong>tungsten</strong> electrode, filler rod added by hand, pure argon; slow but the cleanest, most precise welds; best for thin metal, <strong>aluminum</strong>, and <strong>stainless</strong>.</dd>
+          <dt>Spot (resistance)</dt><dd>Two copper electrodes clamp overlapping sheets and pass a high current that melts a small "nugget"; no filler or gas; car bodies and sheet metal.</dd>
+          <dt>Stick (SMAW)</dt><dd>Not on the list, but worth knowing: flux-coated rod, no gas bottle; good outdoors and on dirty or rusty steel.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Laser Welder</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Laser beam</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Thin sheet</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Clean seams</span></div>
+      </div>
+      <p class="desc">Narrow, deep welds with a small heat-affected zone, so there is little warping or cleanup; handheld fiber laser welders are now common in fab shops.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Riveter</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Cold joint</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Sheet metal</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Mixed metals</span></div>
+      </div>
+      <p class="desc">A cold joint (no heat, no warping) that also joins metals that cannot be welded together; <strong>blind (pop) rivets</strong> install from one side.</p>
+      <div class="more">
+        <dl>
+          <dt>Solid rivets</dt><dd>Set with a pneumatic rivet gun and a bucking bar on the far side; the standard on aircraft.</dd>
+        </dl>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="finishing">Grinding &amp; Finishing</h2>
+  <div class="recap" hidden>
+    <table class="recap-table">
+      <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+      <tbody>
+        <tr><td>Surface grinder</td><td><strong>Flattest</strong>, most precise surface; hardened steel</td></tr>
+        <tr><td>Angle grinder</td><td>Hand tool that <strong>cuts, grinds, and cleans</strong> <em>(change the disk)</em></td></tr>
+        <tr><td>Belt / disc sander</td><td>Belt = <strong>flat</strong> faces; disc = <strong>edges and angles</strong></td></tr>
+        <tr><td>Sand blaster</td><td>Strips <strong>rust and paint</strong>; preps for coating</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rows">
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Surface Grinder</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Abrasive wheel</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Hardened steel</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Flat precision</span></div>
+      </div>
+      <p class="desc">The part sits on a magnetic chuck while a grinding wheel takes very light passes; the go-to machine for flat, parallel, hardened steel parts.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Angle Grinder</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Handheld disk</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Metals</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Cut, grind, clean</span></div>
+      </div>
+      <p class="desc">The most versatile hand tool in the shop: the disk sets the job. Always keep the guard on and wear a face shield.</p>
+      <div class="more">
+        <dl>
+          <dt>Disks</dt><dd><strong>Cut-off</strong> wheel (cutting), <strong>grinding</strong> wheel (weld removal), <strong>flap</strong> disk (blending, finishing), <strong>wire</strong> wheel (rust and paint), surface-conditioning pads.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Belt/Disc Sander</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Belt and disk</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Metal, wood</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Deburr, shape</span></div>
+      </div>
+      <p class="desc">The belt flattens faces and edges; the disk (with a tilting table and miter gauge) finishes angles and convex curves. Coarse grit removes, fine grit smooths.</p>
+    </article>
+
+    <article class="card row-card">
+      <div class="row-head">
+        <h3>Sand Blaster</h3>
+        <div class="fact"><span class="label">Action</span><span class="value">Air + abrasive</span></div>
+        <div class="fact"><span class="label">Materials</span><span class="value">Metals</span></div>
+        <div class="fact"><span class="label">Best for</span><span class="value">Strip rust, paint</span></div>
+      </div>
+      <p class="desc">Cleans and textures surfaces before paint or powder coat, usually in a blast cabinet. Silica sand is a health hazard (silicosis), so shops now use other media.</p>
+      <div class="more">
+        <dl>
+          <dt>Media</dt><dd><strong>Aluminum oxide</strong> (aggressive), <strong>glass bead</strong> (satin finish), <strong>walnut shell</strong> or plastic (gentle), <strong>steel grit</strong>.</dd>
+          <dt>See also</dt><dd>Tumbling, for finishing many small parts at once: <a href="Fabrication.html">Fabrication</a>.</dd>
+        </dl>
+      </div>
+    </article>
+
+  </div>
+
+  <footer>
+    Source: Machinery &amp; Equipment.pdf (machine list); descriptions from standard shop references. Created 2026-11-21.
+  </footer>
+
+</div>
+</body>
+</html>

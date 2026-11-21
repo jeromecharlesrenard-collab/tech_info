@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "TI: Preview site",
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\pythonw.exe",
+      "args": ["${workspaceFolder}\\main.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "never" },
+      "problemMatcher": []
+    },
+    {
+      "label": "TI: Preview window",
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\pythonw.exe",
+      "args": ["${workspaceFolder}\\main.py", "--window"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "never" },
+      "problemMatcher": []
+    },
+    {
+      "label": "TI: Add data",
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\pythonw.exe",
+      "args": ["${workspaceFolder}\\main.py", "--add-data"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "never" },
+      "problemMatcher": []
+    },
+    {
+      "label": "TI: Check site",
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "tools.site_check"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "TI: Run tests",
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "pytest"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "TI: New page",
+      "type": "process",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "tools.new_page", "--title", "${input:pageTitle}", "--description", "${input:pageDescription}"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    { "id": "pageTitle", "type": "promptString", "description": "New page title (also shown on the home page)" },
+    { "id": "pageDescription", "type": "promptString", "description": "One-line description for the home page" }
+  ]
+}
