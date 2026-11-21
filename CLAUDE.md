@@ -44,14 +44,14 @@ The `kb_` file prefix is kept from the Knowledge Bank so the sites share identic
 
 ## Environment
 - venv: `C:\Users\Jerome\PYTHON_PROJECTS\tech_info\.venv` (Python 3.14 from `C:\Users\Jerome\AppData\Local\Programs\Python\Python314\python.exe`)
-- Dependencies (requirements.txt, pinned): pytest, pillow (icon generation). The website itself needs no Python.
+- Dependencies (requirements.txt, pinned): pytest, pillow (icon generation, pasted images), tkinterdnd2 (drag and drop in the ADD window). The website itself needs no Python.
 
 ## Commands (run from the project folder)
 - Shortcuts (in the project folder and in `PYTHON_PROJECTS\1 PYTHON APPS SHORTCUP`; git-ignored, *.lnk):
   - `TECH INFO L.lnk`: open the site locally, no window (GitHub-like server; it stops by itself after `preview_idle_minutes` in config.json, default 60, without page requests; launching again while it runs just reopens the browser). Same as `.venv\Scripts\pythonw.exe main.py`.
   - `TECH INFO W.lnk`: open the live website.
   - `TECH INFO PREVIEW.lnk`: control window (OPEN SITE / CHECK SITE / EXIT), same as `main.py --window` or VS Code task "TI: Preview window".
-  - `TECH INFO ADD.lnk`: TECH INFO ADD DATA window (`tools/add_data.py`, same as `main.py --add-data` or task "TI: Add data"). Same app as KNOWLEDGE BANK ADD: pick a target page (or "New Page"), a source file (.docx, .pdf, .txt, .xlsx, .jpg, .png, .gif, .bmp, .html) and/or pasted text, and/or Instructions, "Update GitHub" (checked by default), then PROCESS; Claude (`claude -p` in this folder) places the data in the page style, runs the checks, and publishes. Unchecked: local update only, then a pop-up offers to publish just the files that job changed. "Match GitHub": commits and pushes every local change so GitHub matches the local site exactly (refuses if GitHub has newer commits). Timeout: `add_data_timeout_minutes` in config.json.
+  - `TECH INFO ADD.lnk`: TECH INFO ADD DATA window (`tools/add_data.py`, same as `main.py --add-data` or task "TI: Add data"). Same app as KNOWLEDGE BANK ADD: pick a target page (or "New Page"), a source file (.docx, .pdf, .txt, .xlsx, .jpg, .png, .gif, .bmp, .html; Browse, drag and drop onto the window, or Ctrl+V / "Paste image" for a copied image or screenshot, saved in logs/add_data_paste/) and/or pasted text, and/or Instructions, "Update GitHub" (checked by default), then PROCESS; Claude (`claude -p` in this folder) places the data in the page style, runs the checks, and publishes. Unchecked: local update only, then a pop-up offers to publish just the files that job changed. "Match GitHub": commits and pushes every local change so GitHub matches the local site exactly (refuses if GitHub has newer commits). Timeout: `add_data_timeout_minutes` in config.json.
   - Shortcut folder copies: `4 TI ADD.lnk` and `4 TI WEB.lnk` (like `4 KB ADD.lnk` / `4 KB WEB.lnk`).
 - New page: `.venv\Scripts\python.exe -m tools.new_page --title "Name" --description "One line"`
 - Check site (links, images, upper/lowercase, arrow, listing): `.venv\Scripts\python.exe -m tools.site_check`
