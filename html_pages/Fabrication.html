@@ -24,6 +24,7 @@
     <a href="#overview">Overview</a>
     <a href="#subtractive">Subtractive</a>
     <a href="#formative">Formative</a>
+    <a href="#injection">Injection Molding</a>
     <a href="#additive">Additive (3D Printing)</a>
     <a href="#joining">Joining</a>
     <a href="#composites">Composites &amp; Chemical</a>
@@ -123,7 +124,7 @@
       <div class="title-line"><h3>Molding, Casting &amp; Metal Forming</h3><span class="origin"><span class="label">Methods</span><span class="value">Molding · Extrusion · Casting · Forging · Sheet metal</span></span></div>
       <div class="more">
         <dl class="tl-list">
-          <dt>Injection molding</dt><dd>Molten thermoplastic is injected under pressure into a closed <strong>steel or aluminum mold</strong>. High tooling cost, but <strong>very low unit cost</strong> at high volume, with excellent repeatability.</dd>
+          <dt>Injection molding</dt><dd>Molten thermoplastic is injected under pressure into a closed <strong>steel or aluminum mold</strong>. High tooling cost, but <strong>very low unit cost</strong> at high volume, with excellent repeatability. Full details: <a href="#injection">Injection Molding</a> below.</dd>
           <dt>Extrusion</dt><dd>Material is pushed through a <strong>die</strong> to make continuous constant-section profiles: tubes, rods, channels, frames. Aluminum, plastics, rubber.</dd>
           <dt>Blow molding</dt><dd>An air-inflated <strong>parison</strong> (hollow tube of hot plastic) is shaped against a mold: <strong>hollow parts</strong> like bottles and tanks. Variants: extrusion, injection, and stretch blow molding.</dd>
           <dt>Rotational molding</dt><dd>Plastic powder in a <strong>rotating heated mold</strong> coats the walls: large, seamless hollow parts with low tooling cost.</dd>
@@ -178,6 +179,282 @@
             <tr><td>Mold</td><td><strong>Silicone</strong>, made from a printed master</td></tr>
             <tr><td>Material</td><td><strong>PU resin</strong> poured under <strong>vacuum</strong> <em>(no bubbles)</em></td></tr>
             <tr><td>Run</td><td><strong>~20 parts</strong> per mold</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="injection">Injection Molding</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Process &amp; Cycle</h3><span class="origin"><span class="label">Steps</span><span class="value">Clamp · Inject · Pack · Cool · Open · Eject</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Principle</dt><dd>Plastic <strong>pellets</strong> are melted in a heated barrel by a rotating screw, <strong>injected</strong> at high pressure into a closed, cooled <strong>mold</strong>, held under pressure while they shrink, then cooled and <strong>ejected</strong> as a finished part.</dd>
+          <dt>The cycle</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Clamp:</strong> the press closes and locks the mold</li>
+              <li><strong>Inject (fill):</strong> the screw pushes forward like a plunger and fills ~95 – 98% of the cavity, controlled by <strong>speed</strong></li>
+              <li><strong>Pack / hold:</strong> switches to <strong>pressure</strong> (V/P transfer) to pack in more plastic as it shrinks, until the gate freezes</li>
+              <li><strong>Cool:</strong> the part solidifies; meanwhile the screw turns and backs up to melt the next shot (<strong>recovery</strong>)</li>
+              <li><strong>Open and eject:</strong> the mold opens and ejector pins push the part out (or a robot picks it)</li>
+            </ul>
+          </dd>
+          <dt>Cycle time</dt><dd>Typically <strong>~10 – 60 s</strong>; <strong>cooling is the longest step</strong> (often more than half), and it grows with the square of wall thickness: twice the wall ≈ four times the cooling.</dd>
+          <dt>Key terms</dt><dd><strong>Shot</strong> (plastic injected per cycle); <strong>cushion</strong> (small melt left in front of the screw, ~5 – 10 mm, proof that packing worked); <strong>regrind</strong> (ground runners and rejects mixed back in, often up to ~10 – 25%).</dd>
+          <dt>Scientific molding</dt><dd>Also <strong>decoupled molding</strong>: fill by speed, pack by pressure, and set each step from measured data (viscosity curve, gate-freeze study) so the process is stable from shot to shot.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Cycle</td><td><strong>Clamp, inject, pack, cool, eject</strong></td></tr>
+            <tr><td>Fill vs. pack</td><td>Fill by <strong>speed</strong>, pack by <strong>pressure</strong></td></tr>
+            <tr><td>Cycle time</td><td><strong>10 – 60 s</strong>, mostly <strong>cooling</strong></td></tr>
+            <tr><td>Thick walls</td><td>2× wall = <strong>4× cooling</strong> time</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>The Press</h3><span class="origin"><span class="label">Topics</span><span class="value">Injection unit · Clamp · Types · Sizing · Auxiliaries</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Injection unit</dt><dd><strong>Hopper</strong> → heated <strong>barrel</strong> (several heater zones) → <strong>reciprocating screw</strong> (melts and injects; a check ring stops melt flowing back) → <strong>nozzle</strong> sealed against the mold's sprue bushing.</dd>
+          <dt>Clamping unit</dt><dd>A fixed and a moving <strong>platen</strong> guided by four <strong>tie bars</strong> (or tie-bar-less frames for easy mold loading). The clamp is closed by a <strong>toggle</strong> (fast, common) or a direct <strong>hydraulic</strong> cylinder.</dd>
+          <dt>Press types</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Hydraulic:</strong> robust, high force, lower price; uses more energy</li>
+              <li><strong>All-electric:</strong> servo motors; precise, repeatable, clean, quiet, much lower energy use; standard for medical and precision parts</li>
+              <li><strong>Hybrid:</strong> electric screw with hydraulic clamp, or the reverse</li>
+              <li><strong>Vertical:</strong> mold opens up and down; ideal for insert molding and overmolding</li>
+            </ul>
+          </dd>
+          <dt>Sizing: clamp force</dt><dd>Clamp force must hold the mold shut against the melt: <strong>projected area of all cavities and runners × ~2 – 5 US tons per in²</strong> (about 2.5 for many resins; more for stiff-flowing ones like PC). Presses range from <strong>~5 tons</strong> (micro) to <strong>over 5,000 tons</strong> (car bumpers).</dd>
+          <dt>Sizing: shot</dt><dd>The shot should use about <strong>20 – 80% of the barrel capacity</strong>: too small and the melt sits too long and degrades; too big and it is not fully melted.</dd>
+          <dt>Mold fit</dt><dd>Check the <strong>tie-bar spacing</strong> (mold width), <strong>minimum and maximum mold height</strong>, <strong>opening stroke</strong> (room to eject the part), and the ejector pattern.</dd>
+          <dt>Pressures</dt><dd>Melt pressure is often <strong>~10,000 – 20,000 psi</strong> (70 – 140 MPa) and up to ~30,000 psi; the hydraulic gauge reads lower, multiplied by the screw's <strong>intensification ratio</strong> (often ~10:1).</dd>
+          <dt>Auxiliaries</dt><dd>Resin <strong>dryer</strong> (desiccant), <strong>mold temperature controller</strong> (water or oil) or chiller, <strong>robot</strong> or sprue picker, conveyor, granulator for regrind, color <strong>dosing unit</strong> (masterbatch).</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Two halves</td><td><strong>Injection unit</strong> melts; <strong>clamp unit</strong> holds the mold</td></tr>
+            <tr><td>Press size</td><td>In <strong>tons of clamp</strong></td></tr>
+            <tr><td>Tonnage</td><td>Projected area × <strong>~2.5 tons/in²</strong></td></tr>
+            <tr><td>Shot</td><td>Use <strong>20 – 80%</strong> of the barrel</td></tr>
+            <tr><td>All-electric</td><td><strong>Precise</strong> and saves energy</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>The Mold</h3><span class="origin"><span class="label">Topics</span><span class="value">Halves · Runners · Gates · Ejection · Actions · Cooling</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Two halves</dt><dd><strong>A side</strong> (cavity, fixed half, injection side, usually the show surface) and <strong>B side</strong> (core, moving half, ejector side); they meet at the <strong>parting line</strong>. A standard <strong>mold base</strong> (DME, Hasco) holds the cavity and core inserts.</dd>
+          <dt>Feed system</dt><dd><strong>Sprue</strong> (from the nozzle) → <strong>runners</strong> (channels) → <strong>gates</strong> (small openings into each cavity).
+            <ul class="steps">
+              <li><strong>Cold runner:</strong> runners freeze and are ejected with the parts (scrap or regrind); cheaper mold</li>
+              <li><strong>Hot runner:</strong> a heated manifold keeps runners molten; no runner waste, faster cycle; more costly mold</li>
+            </ul>
+          </dd>
+          <dt>Gate types</dt><dd><strong>Edge</strong> (simplest, trimmed by hand), <strong>submarine / tunnel</strong> (sheared off automatically at ejection), <strong>pin point</strong> (three-plate molds), <strong>fan</strong> and <strong>film</strong> (wide, flat parts), <strong>direct sprue</strong>, <strong>hot tip</strong> and <strong>valve gate</strong> (hot runner). Gate position controls weld lines, sink, and warp.</dd>
+          <dt>Two-plate vs. three-plate</dt><dd><strong>Two-plate:</strong> one parting line, simplest. <strong>Three-plate:</strong> a second opening separates the runner from the parts, so gates can sit anywhere on the part.</dd>
+          <dt>Ejection</dt><dd><strong>Ejector pins</strong> (most common, leave small round marks), sleeves (around round cores), blades, <strong>stripper plates</strong> (push the whole edge: thin-walled parts), air poppets.</dd>
+          <dt>Undercuts</dt><dd>Features that block straight ejection need moving parts: <strong>slides</strong> (side actions driven by angled cam pins), <strong>lifters</strong> (inside undercuts), <strong>collapsible cores</strong> and <strong>unscrewing molds</strong> (internal threads). Each adds cost: design undercuts out when possible.</dd>
+          <dt>Cooling and venting</dt><dd><strong>Cooling channels</strong> drilled near the cavity (with baffles and bubblers for deep cores); <strong>conformal cooling</strong> (3D-printed inserts) follows the part shape. <strong>Vents</strong>, shallow slots (~0.01 – 0.05 mm deep, by resin) on the parting line, let air out so it does not burn the plastic.</dd>
+          <dt>Cavities</dt><dd><strong>Single-cavity</strong>, <strong>multi-cavity</strong> (2, 4, 8, ... identical parts per shot, with a balanced runner), or <strong>family mold</strong> (different parts of one product in one shot).</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Halves</td><td><strong>A</strong> = cavity (show side); <strong>B</strong> = core (ejector side)</td></tr>
+            <tr><td>Flow path</td><td><strong>Sprue → runner → gate → cavity</strong></td></tr>
+            <tr><td>Hot runner</td><td><strong>No runner waste</strong>, costlier mold</td></tr>
+            <tr><td>Undercuts</td><td>Need <strong>slides</strong> or <strong>lifters</strong> <em>(design them out)</em></td></tr>
+            <tr><td>Vents</td><td>Let <strong>air out</strong> <em>(or it burns)</em></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Mold Steels, Classes &amp; Finishes</h3><span class="origin"><span class="label">Topics</span><span class="value">P20 · H13 · 420 SS · Aluminum · SPI classes · SPI finish</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Mold materials</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Aluminum</strong> (7075, QC-10): prototype and bridge tools; fast to machine and cool, but wears sooner (~thousands to tens of thousands of shots)</li>
+              <li><strong>P20:</strong> pre-hardened (~30 HRC); the general production mold steel</li>
+              <li><strong>H13:</strong> hardened (~48 – 52 HRC); high volume, abrasive glass-filled resins, hot runners</li>
+              <li><strong>S7:</strong> shock resistant (~54 – 56 HRC); shut-offs and slides</li>
+              <li><strong>420 stainless:</strong> corrosion resistant, polishes to a mirror; medical, clear lenses, PVC</li>
+              <li><strong>Beryllium copper</strong> inserts: pull heat out of hot spots fast</li>
+            </ul>
+          </dd>
+          <dt>SPI mold classes</dt><dd>Expected life of the mold: <strong>Class 101</strong> (1 million+ cycles, hardened steel), <strong>102</strong> (up to 1 million), <strong>103</strong> (up to 500,000), <strong>104</strong> (up to 100,000), <strong>105</strong> (prototype, up to ~500).</dd>
+          <dt>SPI surface finishes</dt><dd><strong>A</strong> (diamond polish: A-1 mirror for lenses), <strong>B</strong> (paper polish), <strong>C</strong> (stone), <strong>D</strong> (dry blast: matte). <strong>Textures</strong> (e.g. Mold-Tech) hide flow marks and scratches but need more draft.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Prototype</td><td><strong>Aluminum</strong> mold</td></tr>
+            <tr><td>Production</td><td><strong>P20</strong>; high volume <strong>H13</strong></td></tr>
+            <tr><td>Clear or medical</td><td><strong>420 stainless</strong></td></tr>
+            <tr><td>Class 101</td><td><strong>1 million+</strong> shots</td></tr>
+            <tr><td>Finish</td><td><strong>A</strong> = mirror … <strong>D</strong> = matte</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Resins &amp; Process Settings</h3><span class="origin"><span class="label">Topics</span><span class="value">Drying · Melt temp · Mold temp · Shrinkage</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Drying</dt><dd><strong>Hygroscopic</strong> resins absorb moisture and must be dried in a <strong>desiccant dryer</strong> before molding (PA, PC, PET, PBT, ABS); wet resin causes <strong>splay</strong> (silver streaks) and brittle parts. PP and PE need no drying.</dd>
+          <dt>Main settings</dt><dd><strong>Melt temperature</strong> (barrel zones), <strong>mold temperature</strong>, injection <strong>speed</strong>, <strong>V/P transfer</strong> point, <strong>pack/hold pressure and time</strong>, <strong>cooling time</strong>, <strong>back pressure</strong> and screw rpm (melt quality).</dd>
+          <dt>Shrinkage</dt><dd>The mold is cut larger than the part. <strong>Amorphous</strong> resins (ABS, PC, PS, PMMA) shrink little (~0.4 – 0.8%) and evenly; <strong>semi-crystalline</strong> resins (PP, PE, POM, PA) shrink more (~1 – 3%) and warp more easily.</dd>
+        </dl>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Resin</th><th>Drying</th><th>Melt temp</th><th>Mold temp</th><th>Shrinkage</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>PP</strong></td><td>Not needed</td><td>~200 – 250 °C</td><td>~20 – 60 °C</td><td>~1.0 – 2.5%</td></tr>
+              <tr><td><strong>HDPE</strong></td><td>Not needed</td><td>~200 – 280 °C</td><td>~20 – 60 °C</td><td>~1.5 – 3.0%</td></tr>
+              <tr><td><strong>ABS</strong></td><td>~80 °C, 2 – 4 h</td><td>~220 – 260 °C</td><td>~50 – 80 °C</td><td>~0.4 – 0.7%</td></tr>
+              <tr><td><strong>PC</strong></td><td>~120 °C, 3 – 4 h</td><td>~280 – 320 °C</td><td>~80 – 110 °C</td><td>~0.5 – 0.7%</td></tr>
+              <tr><td><strong>PA66</strong></td><td>~80 °C, 4 h</td><td>~270 – 300 °C</td><td>~70 – 100 °C</td><td>~1.0 – 2.0%</td></tr>
+              <tr><td><strong>POM</strong></td><td>Optional</td><td>~190 – 210 °C</td><td>~80 – 100 °C</td><td>~1.8 – 2.2%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Typical ranges; always use the resin supplier's data sheet. Glass fill lowers shrinkage along the flow.</p>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Drying</td><td><strong>Nylon, PC, PET, ABS</strong>: always dry</td></tr>
+            <tr><td>Wet resin</td><td><strong>Silver streaks</strong>, brittle parts</td></tr>
+            <tr><td>Shrinkage</td><td>Amorphous <strong>~0.5%</strong>; semi-crystalline <strong>~2%</strong></td></tr>
+            <tr><td>Data sheet</td><td>The resin supplier's numbers <strong>rule</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Part Design Rules</h3><span class="origin"><span class="label">Rules</span><span class="value">Walls · Draft · Ribs · Radii · Bosses · Undercuts</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Uniform walls</dt><dd>Keep walls <strong>even</strong>, typically <strong>~1 – 4 mm</strong> (0.04 – 0.16 in); thick spots cause sink, voids, warp, and long cycles. Core out thick areas.</dd>
+          <dt>Draft</dt><dd>Taper walls in the pull direction so the part releases: <strong>~1 – 2° per side</strong> (0.5° minimum); add ~1° per 0.001 in (0.025 mm) of texture depth.</dd>
+          <dt>Ribs</dt><dd>Stiffen with ribs instead of thick walls: rib thickness <strong>~50 – 60% of the wall</strong> (prevents sink on the show side), height up to ~3× the wall.</dd>
+          <dt>Radii</dt><dd>No sharp corners: inside radius <strong>≥ 0.5 × wall</strong>, outside radius = inside + wall; better flow, less stress cracking.</dd>
+          <dt>Bosses</dt><dd>For screws and inserts: wall ~60% of the nominal wall, tied to nearby walls with ribs; core them out.</dd>
+          <dt>Undercuts and holes</dt><dd>Avoid undercuts (they need slides or lifters); use pass-through cores or snap fits designed to flex out. Plan the <strong>gate</strong>, <strong>parting line</strong>, and <strong>ejector marks</strong> away from show surfaces.</dd>
+          <dt>Check</dt><dd>Run a <strong>mold-flow simulation</strong> and a design-for-manufacturing (DFM) review with the molder before cutting steel.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Walls</td><td><strong>Even</strong>, 1 – 4 mm</td></tr>
+            <tr><td>Draft</td><td><strong>1 – 2°</strong> per side <em>(more for texture)</em></td></tr>
+            <tr><td>Ribs</td><td><strong>≤ 60%</strong> of the wall <em>(or they sink)</em></td></tr>
+            <tr><td>Corners</td><td>Always <strong>rounded</strong></td></tr>
+            <tr><td>Undercuts</td><td><strong>Avoid</strong> <em>(each one adds cost)</em></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Defects &amp; Fixes</h3><span class="origin"><span class="label">Defects</span><span class="value">Short shot · Flash · Sink · Warp · Weld line · Splay · Burn</span></span></div>
+      <div class="more">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Defect</th><th>What it looks like</th><th>Common causes and fixes</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Short shot</strong></td><td>Part not completely filled</td><td>More shot size, speed, or pressure; hotter melt or mold; clear blocked vents</td></tr>
+              <tr><td><strong>Flash</strong></td><td>Thin fins at the parting line or pins</td><td>Too much pressure or too little clamp force; worn or dirty parting line; lower speed or pack pressure</td></tr>
+              <tr><td><strong>Sink marks</strong></td><td>Dents over thick areas, ribs, bosses</td><td>More pack/hold pressure and time; thinner walls and ribs; gate at the thick section</td></tr>
+              <tr><td><strong>Voids</strong></td><td>Bubbles inside thick sections</td><td>Same as sink; more pack; dry the resin</td></tr>
+              <tr><td><strong>Warpage</strong></td><td>Part twisted or bowed</td><td>Even wall thickness; balanced mold cooling; longer cooling; adjust gate position</td></tr>
+              <tr><td><strong>Weld / knit lines</strong></td><td>Visible lines where flow fronts meet; weaker spot</td><td>Hotter melt and mold; faster fill; vent at the meeting point; move the gate</td></tr>
+              <tr><td><strong>Splay (silver streaks)</strong></td><td>Silvery streaks in the flow direction</td><td>Dry the resin properly; lower melt temperature</td></tr>
+              <tr><td><strong>Burn marks</strong></td><td>Black or brown spots at the end of fill</td><td>Trapped air heated by compression (dieseling): add or clean vents; slower fill</td></tr>
+              <tr><td><strong>Jetting</strong></td><td>Snake-like line from the gate</td><td>Slower initial speed; bigger gate, or gate against a wall</td></tr>
+              <tr><td><strong>Flow lines</strong></td><td>Wavy lines or rings on the surface</td><td>Hotter melt and mold; faster fill; even walls</td></tr>
+              <tr><td><strong>Brittleness</strong></td><td>Parts crack or snap easily</td><td>Wet or overheated (degraded) resin; too much regrind</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Short shot</td><td>Not full: <strong>more</strong> plastic, speed, or heat</td></tr>
+            <tr><td>Flash</td><td>Too much: <strong>less</strong> pressure or more clamp</td></tr>
+            <tr><td>Sink / voids</td><td><strong>More pack</strong>, thinner walls</td></tr>
+            <tr><td>Splay</td><td><strong>Dry</strong> the resin</td></tr>
+            <tr><td>Burns</td><td><strong>Vent</strong> the mold</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Costs, Lead Times &amp; Variants</h3><span class="origin"><span class="label">Topics</span><span class="value">Tooling cost · Lead time · Overmolding · 2K · LSR</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Tooling cost</dt><dd>Very rough: <strong>aluminum prototype</strong> mold ~$2,000 – $10,000+; <strong>steel production</strong> mold ~$10,000 – $100,000+; multi-cavity hot-runner molds well beyond. Driven by part size, cavities, undercuts (slides, lifters), finish, and tolerances.</dd>
+          <dt>Lead time</dt><dd>Roughly <strong>2 – 6 weeks</strong> for aluminum, <strong>8 – 16+ weeks</strong> for hardened steel, plus first samples (T1) and tuning.</dd>
+          <dt>Part cost</dt><dd>Resin + machine time (rate × cycle ÷ cavities) + labor and finishing; often cents to a few dollars per part. Molding usually beats machining or printing from about <strong>1,000 – 10,000 parts</strong>.</dd>
+          <dt>Variants</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Insert molding:</strong> plastic molded around metal inserts (threaded inserts, pins, contacts)</li>
+              <li><strong>Overmolding:</strong> a second material over a molded part (soft TPE grip on a rigid handle)</li>
+              <li><strong>Two-shot (2K):</strong> two materials in one machine and one cycle</li>
+              <li><strong>Gas assist:</strong> gas hollows out thick sections (handles) to stop sink</li>
+              <li><strong>LSR molding:</strong> liquid silicone rubber, injected cold into a hot mold (seals, medical, baby products)</li>
+              <li><strong>Micro-molding:</strong> tiny precision parts (medical, electronics)</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Mold cost</td><td>Aluminum <strong>~$5k</strong>; steel <strong>$10k – $100k+</strong></td></tr>
+            <tr><td>Lead time</td><td>Weeks (aluminum) to <strong>months</strong> (steel)</td></tr>
+            <tr><td>Break-even</td><td>From <strong>~1,000 – 10,000</strong> parts</td></tr>
+            <tr><td>Overmolding</td><td><strong>Soft grip</strong> on a hard part</td></tr>
           </tbody>
         </table>
       </div>

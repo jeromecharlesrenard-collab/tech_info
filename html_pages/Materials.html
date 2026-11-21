@@ -166,6 +166,62 @@
       </div>
     </article>
 
+    <article class="card row-card title-box" id="hardness">
+      <div class="title-line"><h3>Hardness Scales</h3><span class="origin"><span class="label">Scales</span><span class="value">Rockwell · Brinell · Vickers · Knoop · Leeb · Mohs</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>What it measures</dt><dd>Resistance to <strong>denting</strong>: a hard tip is pressed in with a set load, and the size or depth of the dent gives the number. Harder steel is also stronger and more wear resistant, but less tough.</dd>
+          <dt>Rockwell (HR)</dt><dd>The <strong>shop standard</strong>: fast, reads the dent <strong>depth</strong> directly on a dial or screen. <strong>HRC</strong> (diamond cone, 150 kgf): hardened steel, ~20 – 70. <strong>HRB</strong> (1/16 in steel ball, 100 kgf): soft steel, brass, aluminum, ~0 – 100. <strong>HRA</strong>: carbide and very hard parts.</dd>
+          <dt>Brinell (HB, HBW)</dt><dd>A <strong>10 mm ball</strong> pressed with up to 3,000 kgf; the dent <strong>diameter</strong> is measured. A big dent averages coarse grain: castings, forgings, plate (AR400 / AR500 are named after it).</dd>
+          <dt>Vickers (HV)</dt><dd>A <strong>diamond pyramid</strong>; the dent diagonals are measured under a microscope. One scale from the softest to the hardest metals; thin parts, coatings, and case-hardened layers.</dd>
+          <dt>Knoop (HK)</dt><dd>An elongated diamond for <strong>very thin</strong> layers, coatings, and brittle materials (glass, ceramics); a lab test.</dd>
+          <dt>Leeb (HL)</dt><dd>A <strong>portable</strong> rebound tester: a tip bounces off the surface; used on large parts in place, then converted to HRC or HB.</dd>
+          <dt>Mohs</dt><dd><strong>Scratch</strong> scale from 1 (talc) to 10 (diamond); minerals and gems, not used for metals in the shop.</dd>
+          <dt>Plastics and rubber</dt><dd><strong>Shore</strong> durometer: Shore A (soft: rubber, TPU), Shore D (hard plastics).</dd>
+          <dt>Typical values</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>6061-T6 aluminum:</strong> ~95 HB</li>
+              <li><strong>1018 mild steel:</strong> ~125 HB (~70 HRB)</li>
+              <li><strong>4140 pre-hard:</strong> ~28 – 32 HRC</li>
+              <li><strong>AR500 plate:</strong> ~500 HB (~50 HRC)</li>
+              <li><strong>Knife blades, 440C, bearings:</strong> ~58 – 62 HRC</li>
+              <li><strong>HSS cutting tools:</strong> ~63 – 66 HRC; <strong>carbide:</strong> ~90 HRA (~1,500 HV and up)</li>
+            </ul>
+          </dd>
+        </dl>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>HRC</th><th>HB (Brinell)</th><th>HV (Vickers)</th><th>Typical steel</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>20</strong></td><td>~226</td><td>~238</td><td>Medium carbon, as rolled</td></tr>
+              <tr><td><strong>30</strong></td><td>~286</td><td>~302</td><td>Pre-hardened 4140, P20 mold steel</td></tr>
+              <tr><td><strong>40</strong></td><td>~371</td><td>~392</td><td>Springs, tough tools</td></tr>
+              <tr><td><strong>50</strong></td><td>~481</td><td>~513</td><td>AR500, H13 tool steel</td></tr>
+              <tr><td><strong>60</strong></td><td>—</td><td>~697</td><td>Knives, bearings, tool steel</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Conversions are approximate (ASTM E140) and valid for steel only. A file "skates" on steel at about 60 HRC and up.</p>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Rockwell</td><td><strong>HRC</strong> hard steel; <strong>HRB</strong> soft metals <em>(the shop test)</em></td></tr>
+            <tr><td>Brinell</td><td>Big <strong>ball</strong>: castings, plate <em>(AR500 = 500 HB)</em></td></tr>
+            <tr><td>Vickers</td><td>Diamond <strong>pyramid</strong>: one scale for all</td></tr>
+            <tr><td>Leeb</td><td><strong>Portable</strong> rebound test</td></tr>
+            <tr><td>Shore</td><td><strong>Plastics and rubber</strong></td></tr>
+            <tr><td>Rule of thumb</td><td><strong>HB ≈ 10 × HRC</strong> <em>(above ~20 HRC)</em></td></tr>
+            <tr><td>Knives</td><td><strong>~60 HRC</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
   </div>
 
   <p class="table-title">Metals Quick Comparison</p>
@@ -507,7 +563,7 @@
           <dt>Yield strength</dt><dd>The stress where it starts to <strong>bend for good</strong> (permanent deformation); below it, the part springs back. Parts are designed to stay below yield.</dd>
           <dt>Impact strength</dt><dd>Energy absorbed in a <strong>sudden hit</strong> without breaking (Charpy or Izod test) = <strong>toughness</strong>.</dd>
           <dt>Stiffness</dt><dd>Resistance to <strong>flexing</strong> under load (elastic modulus); steel ~200 GPa, aluminum ~70 GPa (1/3), so aluminum bends 3× more for the same shape.</dd>
-          <dt>Hardness</dt><dd>Resistance to <strong>scratching and denting</strong> (Rockwell HRC, Brinell HB).</dd>
+          <dt>Hardness</dt><dd>Resistance to <strong>scratching and denting</strong>; scales and conversions: <a href="#hardness">Hardness Scales</a>.</dd>
           <dt>Fatigue strength</dt><dd>The stress a part survives over <strong>millions of load cycles</strong>; far below tensile strength, and the cause of most real-world part failures (cracks growing from sharp corners and scratches).</dd>
           <dt>Ductility</dt><dd>How much a material <strong>stretches or bends before it breaks</strong>: mild steel and aluminum bend and warn; cast iron and ceramics snap without warning.</dd>
           <dt>Units</dt><dd>1 <strong>ksi</strong> = 1,000 psi ≈ <strong>6.9 MPa</strong>.</dd>
