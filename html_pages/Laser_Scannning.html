@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laser Scannning</title>
+<link rel="icon" type="image/png" href="../assets/tech_info.png">
+<link rel="stylesheet" href="../assets/kb_style.css">
+<script src="../kb_config.js"></script>
+<script src="../assets/kb_common.js"></script>
+</head>
+<body>
+<a class="return-arrow" href="../index.html" title="Back to Tech Info" aria-label="Back to Tech Info"><img src="../assets/return_arrow.svg" alt=""></a>
+<div class="page">
+
+  <header>
+    <h1>Laser Scannning</h1>
+    <p>How laser and structured-light 3D scanning works, scan types and workflow, and Southern California scanning service companies.</p>
+  </header>
+
+  <p class="intro">3D scanning (also called laser scanning or reverse engineering) captures the real shape of a physical object as digital 3D data, which then becomes a CAD model, an inspection report, or a 3D-printable mesh. For the handheld scanner itself on the shop floor, see <a href="Machinery_Equipment.html">Machinery &amp; Equipment</a>.</p>
+
+  <nav class="section-nav" aria-label="Page sections">
+    <a href="#how-it-works">How Laser Scanning Works</a>
+    <a href="#companies">Laser Scanning Companies</a>
+  </nav>
+
+  <h2 id="how-it-works">How Laser Scanning Works</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Principle &amp; Technologies</h3><span class="origin"><span class="label">Methods</span><span class="value">Laser triangulation · Structured light · LiDAR · Photogrammetry · CMM arm</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Basic idea</dt><dd>A scanner measures the <strong>distance</strong> from itself to thousands of points on a part's surface, many times per second; software stitches those measurements into a <strong>point cloud</strong> that represents the part's true shape.</dd>
+          <dt>Laser triangulation</dt><dd>A <strong>laser line or dot</strong> is projected onto the part; a camera next to the laser sees how the line bends over the surface. Knowing the fixed angle between laser and camera, geometry (<strong>triangulation</strong>) gives the distance to each point. This is the most common method in handheld industrial scanners.</dd>
+          <dt>Structured light</dt><dd>A projector flashes a series of <strong>striped or coded light patterns</strong> instead of a laser; one or two cameras read how the stripes distort over the part. Captures a wide area in one shot (a "flash"), so it is fast and very accurate for stationary parts, but needs the part and scanner to stay still during the flash.</dd>
+          <dt>LiDAR (time-of-flight)</dt><dd>Measures distance from the <strong>time a laser pulse takes to bounce back</strong>. Less accurate at short range than triangulation, but scans very large scenes or distances fast: buildings, sites, terrain (used for "Scan to BIM").</dd>
+          <dt>Photogrammetry</dt><dd>Builds 3D geometry from many overlapping <strong>ordinary photographs</strong> instead of a laser or projector; low cost and good for large or textured objects, but less precise than laser or structured-light scanning.</dd>
+          <dt>Articulated-arm / CMM scanning</dt><dd>A <strong>portable measuring arm</strong> (e.g., FARO) holds a laser-line probe on a jointed arm with encoders at each joint; combines point-probing accuracy with scanning speed, popular for inspection.</dd>
+          <dt>Accuracy vs. range</dt><dd>In general, the <strong>shorter the range, the higher the accuracy</strong>: close-range laser/structured-light scanners reach a few microns to a few hundredths of a millimeter, while long-range LiDAR trades accuracy (millimeters or more) for coverage over an entire building or site.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Core idea</td><td>Measure many points → build a <strong>point cloud</strong></td></tr>
+            <tr><td>Laser triangulation</td><td>Laser line + camera, <strong>geometry</strong> gives distance</td></tr>
+            <tr><td>Structured light</td><td><strong>Flash</strong> of coded stripes: fast, needs stillness</td></tr>
+            <tr><td>LiDAR</td><td><strong>Time-of-flight</strong>: big scenes, less precise</td></tr>
+            <tr><td>Photogrammetry</td><td>From <strong>photos</strong>, no laser</td></tr>
+            <tr><td>Rule of thumb</td><td><strong>Shorter range = higher accuracy</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Scanning Workflow</h3><span class="origin"><span class="label">Steps</span><span class="value">Prepare → Scan → Register → Mesh → CAD / inspect</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>1. Prepare the part</dt><dd>Clean the surface; shiny, dark, transparent, or black surfaces may need a thin, removable <strong>scanning spray</strong> (or matte powder) so the laser or light reflects evenly. Small <strong>positioning-target stickers</strong> placed on or around the part give the software fixed reference points.</dd>
+          <dt>2. Scan</dt><dd>Sweep the scanner around the part (handheld) or step it between fixed positions (structured light on a tripod) until every surface is covered from enough angles.</dd>
+          <dt>3. Register / align</dt><dd>Software stitches the individual passes or flashes into one <strong>aligned point cloud</strong>, using the target stickers or recognizable surface features as common reference points.</dd>
+          <dt>4. Mesh</dt><dd>The point cloud is converted into a <strong>watertight mesh</strong> (triangles, usually saved as STL or OBJ) that represents the part's outer skin.</dd>
+          <dt>5. CAD reconstruction or inspection</dt><dd>For <strong>reverse engineering</strong>, the mesh is rebuilt into an editable, parametric CAD model (STEP/IGES) in software such as Geomagic Design X. For <strong>inspection</strong>, the mesh is instead compared directly against the original CAD model to find deviations, with no rebuild needed.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Workflow</td><td><strong>Scan → point cloud → mesh → CAD / inspect</strong></td></tr>
+            <tr><td>Tricky surfaces</td><td>Shiny or dark parts need <strong>scanning spray</strong></td></tr>
+            <tr><td>Targets</td><td>Sticker dots help the software <strong>align</strong> scans</td></tr>
+            <tr><td>Reverse engineering</td><td>Mesh rebuilt into <strong>parametric CAD</strong></td></tr>
+            <tr><td>Inspection</td><td>Mesh compared straight against <strong>CAD, no rebuild</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Uses, Benefits &amp; Limitations</h3><span class="origin"><span class="label">Topics</span><span class="value">Applications · Benefits · Limitations</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Applications</dt>
+          <dd>
+            <ul class="steps">
+              <li><strong>Reverse engineering:</strong> recreating CAD for a part that has no drawings (legacy or discontinued components)</li>
+              <li><strong>First-article and dimensional inspection:</strong> checking a produced part against its CAD model (GD&amp;T, deviation color maps)</li>
+              <li><strong>Digital twin / Scan to BIM:</strong> digitizing buildings, plants, or large assemblies for facility and renovation work</li>
+              <li><strong>Fit and tolerance checks:</strong> scanning a part, 3D printing or machining a mating piece, and verifying fit quickly</li>
+              <li><strong>Quality control:</strong> comparing production parts to a reference across a batch</li>
+            </ul>
+          </dd>
+          <dt>Benefits</dt><dd><strong>Non-contact and fast</strong> (captures complex, organic, or freeform shapes that are slow to measure by hand); produces data usable directly for <strong>CAD, 3D printing, or inspection reports</strong>; portable systems can scan parts too large or fixed in place to move.</dd>
+          <dt>Limitations</dt><dd>Struggles with <strong>reflective, transparent, or very dark</strong> surfaces without surface prep; cannot see <strong>hidden or deep internal features</strong> (undercuts, bores) the scanner has no line of sight to; point clouds and meshes carry no design intent (no fillets, holes, or features as parametric data) until rebuilt into CAD; equipment and skilled processing are relatively costly.</dd>
+        </dl>
+      </div>
+      <div class="recap" hidden>
+        <table class="recap-table">
+          <thead><tr><th>Item</th><th>Remember</th></tr></thead>
+          <tbody>
+            <tr><td>Best use</td><td><strong>Reverse engineering</strong> and <strong>inspection</strong></td></tr>
+            <tr><td>Benefit</td><td><strong>Non-contact</strong>, captures complex shapes fast</td></tr>
+            <tr><td>Limitation</td><td>No line of sight = <strong>no hidden features</strong></td></tr>
+            <tr><td>Raw output</td><td>Mesh has <strong>no design intent</strong> until rebuilt</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 id="companies">Laser Scanning Companies</h2>
+  <div class="rows">
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Rapid Scan 3D</h3><span class="origin"><span class="label">Location</span><span class="value">Lakewood, CA</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Overview</dt><dd>Offers industrial 3D laser and structured-light scanning alongside hardware sales.</dd>
+          <dt>Capabilities</dt><dd><strong>Precision metrology-grade scanning</strong>, scan-to-CAD reverse engineering, and first-article dimensional inspection.</dd>
+          <dt>Deliverables</dt><dd>Point clouds, watertight meshes (STL/OBJ), and parametric CAD models (STEP/IGES).</dd>
+          <dt>Service options</dt><dd>Offers both in-lab scanning for shipped/dropped-off parts and on-site mobile scanning across Southern California.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>eCadCam 3D Scanning &amp; 3D Printing Services</h3><span class="origin"><span class="label">Location</span><span class="value">Glendale, CA</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Overview</dt><dd>Focuses on turning physical components into manufacturable CAD geometry and prototypes.</dd>
+          <dt>Capabilities</dt><dd><strong>High-detail 3D part scanning</strong>, legacy component replication, and full parametric CAD reconstruction.</dd>
+          <dt>Deliverables</dt><dd>Clean mesh files and editable native/neutral CAD formats suitable for CNC machining or injection molding.</dd>
+          <dt>Integration</dt><dd>Combines scanning with in-house 3D printing to validate fit and tolerances immediately after capture.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>Additive Plus 3D Printing Services</h3><span class="origin"><span class="label">Location</span><span class="value">Gardena, CA</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Overview</dt><dd>Provides engineering-driven 3D laser and structured-light scanning in the South Bay.</dd>
+          <dt>Capabilities</dt><dd><strong>Sub-millimeter capture</strong> for small intricate parts up to full assemblies, including handling reflective or complex surfaces.</dd>
+          <dt>Deliverables</dt><dd>STL, OBJ, STEP, IGES, native SolidWorks/Fusion 360 files, and dimensional deviation/QC inspection reports.</dd>
+          <dt>Workflow</dt><dd>Supports NDA-protected projects with both local lab drop-off and on-site scanning.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card row-card title-box">
+      <div class="title-line"><h3>GDS &ndash; Digital Twin, 3D Laser Scanning, Scan to BIM &amp; Reverse Engineering</h3><span class="origin"><span class="label">Location</span><span class="value">Torrance, CA</span></span></div>
+      <div class="more">
+        <dl class="tl-list">
+          <dt>Overview</dt><dd>Handles both industrial product reverse engineering and larger-scale laser digitization.</dd>
+          <dt>Capabilities</dt><dd><strong>High-accuracy laser scanning</strong>, mechanical reverse engineering, and digital twin creation.</dd>
+          <dt>Deliverables</dt><dd>Registered point clouds, 3D surface/solid models, and engineering documentation.</dd>
+          <dt>Availability</dt><dd>Operates with flexible scheduling for industrial and commercial clients.</dd>
+        </dl>
+      </div>
+    </article>
+
+  </div>
+
+  <footer>
+    Source: Rapid Scan 3D.docx. Created 2026-11-22.
+  </footer>
+
+</div>
+</body>
+</html>
